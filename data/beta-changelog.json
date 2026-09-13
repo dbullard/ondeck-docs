@@ -4,8 +4,8 @@
     {
       "version": "1.2.2",
       "app_version": "1.2.2",
-      "build": "60",
-      "html": "<h2>Relay v1.2.2 <small>(Beta)</small></h2>\n\n<h3>Build 58</h3>\n<ul>\n  <li>Added the guided Setup Wizard, enhanced OSC automation, Spectera monitoring, tile snapping, wireless-device improvements, and mobile refinements.</li>\n</ul>\n\n<h3>Build 59</h3>\n<ul>\n  <li>Improved Planning Center synchronization so position assignment candidates stay current with live data.</li>\n</ul>\n\n<h3>Build 60</h3>\n<ul>\n  <li>Improved Spectera compatibility, certificate diagnostics, and pinned-certificate trust.</li>\n</ul>"
+      "build": "61",
+      "html": "<h3>Fixes</h3>\n<ul>\n  <li><strong>Shure wireless reliability</strong> — Resolved AD4Q live-show issues: gaps in QLX-D meter updates, unfair queuing under heavy channel load, and an inaccurate battery percentage display.</li>\n  <li><strong>Transcription profanity filter</strong> — Fixed a bug where profanity filter settings for transcription input didn't persist between sessions.</li>\n</ul>"
     },
     {
       "version": "1.2.1",
