@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Relay",
-  "description": "Documentation for Relay - a Mac and iPad dashboard app for live production teams.",
+  "description": "Documentation for Relay - a Mac and iPad (Coming Soon) dashboard app for live production teams.",
   "colors": {
     "primary": "#3C63EF",
     "light": "#34C8EE",
