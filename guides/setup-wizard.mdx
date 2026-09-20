@@ -1,32 +1,58 @@
 ---
 title: "Setup Wizard: guided first-run setup for Relay"
-description: "Let the Setup Wizard find your devices, connect your services, and build a starter dashboard."
+description: "Walk through connecting services, choosing starter tiles, and creating your first dashboard."
 sidebarTitle: "Setup Wizard"
 icon: "wand-sparkles"
 keywords: ["setup", "onboarding", "first run", "wizard", "starter dashboard"]
 ---
 
-The Setup Wizard is a guided first-run flow that gets you to a working dashboard without building everything by hand.
+The Setup Wizard walks you through connecting your services, choosing starter tiles, and creating a first dashboard from what you set up. Every step is optional, so you can skip anything you don't use.
 
-## What it does
+## Open the wizard
 
-- **Finds your devices** on the network, including OSC-capable devices.
-- **Connects your services**, such as Planning Center and ProPresenter.
-- **Suggests starter tiles** based on what it found.
-- **Builds your first dashboard** with a live layout preview, so you can see the result before you accept it.
+Choose `File > Setup Wizard…`. You can run it again at any time, for example after you add new devices or services. On iOS (Coming Soon), use the ellipsis menu.
 
-Free and Pro users each get their own sequence of steps, so you only see options that apply to your license.
+Free and Pro users see their own sequence of steps.
 
-## Reopen the wizard
+## The steps
 
-You can run the wizard again at any time, for example after you add new devices or services:
+<Steps>
+  <Step title="Welcome">
+    The first screen previews what the wizard covers: connecting services, finding devices on your network, and building your first layout. Choose `Get Started` to begin, or `Skip Setup` to close the wizard.
 
-- **Mac:** choose it from the `File` menu.
-- **iOS (Coming Soon):** choose it from the ellipsis menu.
+    <Frame>
+      ![Setup Wizard welcome screen listing Connect Services, Find Devices, and Build Your Dashboard](/images/screenshots/wizard-1-welcome.png)
+    </Frame>
+  </Step>
+
+  <Step title="Connect your services">
+    Link the services you use. Planning Center syncs service plans and schedules. ProPresenter controls slides and media playback and requires Relay Pro.
+
+    <Frame>
+      ![Connect Your Services step showing Planning Center and ProPresenter](/images/screenshots/wizard-2-services.png)
+    </Frame>
+
+    Choose `Skip this step` if you don't use either.
+  </Step>
+
+  <Step title="Choose starter tiles">
+    Tick the tiles you want, such as PCO Rundown, PCO Team Assignments, Roster Team Assignments, Person, Text, Image, Picker, Document, Webpage, or Time. A live layout preview on the right updates as you choose, so you can see how the tiles will sit on the canvas before you continue.
+
+    <Frame>
+      ![Choose Starter Tiles step with Text and Time selected and a layout preview](/images/screenshots/wizard-3-tiles-preview.png)
+    </Frame>
+  </Step>
+
+  <Step title="Review and create your dashboard">
+    Name your dashboard (the default is "Dashboard 1"), review the tiles, and choose `Create Dashboard`. Wireless devices Relay knows about are listed here as wireless mic and IEM status tiles, each with its own checkbox, so you can leave out any you don't want.
+  </Step>
+</Steps>
+
+Use `Back` on any step to change an earlier choice.
 
 ## After the wizard
 
 - Fine-tune your layout with [Tiles](/dashboards/tiles).
 - Add more [modules](/dashboards/modules) as your needs grow.
 - Review [Core concepts](/core-concepts) if any terms are new.
-- If a device was not found, add it manually under [Integrations](/integrations/overview).
+- If a device wasn't found, add it manually under [Integrations](/integrations/overview).
