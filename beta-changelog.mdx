@@ -6,12 +6,20 @@ sidebarTitle: "Beta Changelog"
 
 Relay beta release notes are organized by version. Beta Sparkle update feeds can link to each version directly using the per-version anchors on this page.
 
-## Version 1.2.2 (build 61) <a id="version-122"></a>
+## Version 1.2.2 (build 62) <a id="version-122"></a>
+
+#### New
+
+- **Shared Values & Variables** — A new Variables window lets you define values once and use them across text inputs. Values are grouped by source, with plus controls for adding from each source, and the window stays above Relay while you work.
+- **Wireless variables** — Suggested wireless telemetry variables are created automatically in live mode, labeled with your saved channel names. You can refresh names from the Variables window.
+- **Insert variables anywhere** — Variables can be inserted into the focused editor, and insertion controls now sit on each row. Shared variables can be deleted from the window.
+- **10-segment mic meter** — The Shure mic meter now has 10 segments with a -60 dBFS floor for finer readings on quiet signals.
 
 #### Fixes
 
-- **Shure wireless reliability** — Resolved AD4Q live-show issues: gaps in QLX-D meter updates, unfair queuing under heavy channel load, and an inaccurate battery percentage display.
-- **Transcription profanity filter** — Fixed a bug where profanity filter settings for transcription input didn't persist between sessions.
+- **Transcription profanity filter** — The filter now catches inflected words and already-censored text, and stays applied.
+- **ProPresenter slide numbers** — Slide numbers now come from ProPresenter's slide index, and disabled slides are counted correctly in group ranges.
+- **Variables window** — Variables stay scoped to Relay, the window no longer reopens on launch, and its shortcut no longer collides with the system screenshot shortcut.
 
 ## Version 1.2.1 (build 57) <a id="version-121"></a>
 

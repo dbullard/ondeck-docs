@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Relay 1.2.2 (build 61) Beta Release Notes</title>
+  <title>Relay 1.2.2 (build 62) Beta Release Notes</title>
   <style>
     :root { color-scheme: light dark; }
     body { margin: 0; padding: 16px; font: -apple-system-body; line-height: 1.45; }
@@ -17,11 +17,20 @@
   </style>
 </head>
 <body>
-  <h1>Relay 1.2.2 (build 61) Beta</h1>
-  <h3>Fixes</h3>
+  <h1>Relay 1.2.2 (build 62) Beta</h1>
+  <h3>New</h3>
 <ul>
-  <li><strong>Shure wireless reliability</strong> — Resolved AD4Q live-show issues: gaps in QLX-D meter updates, unfair queuing under heavy channel load, and an inaccurate battery percentage display.</li>
-  <li><strong>Transcription profanity filter</strong> — Fixed a bug where profanity filter settings for transcription input didn't persist between sessions.</li>
+  <li><strong>Shared Values &amp; Variables</strong> — A new Variables window lets you define values once and use them across text inputs. Values are grouped by source, with plus controls for adding from each source, and the window stays above Relay while you work.</li>
+  <li><strong>Wireless variables</strong> — Suggested wireless telemetry variables are created automatically in live mode, labeled with your saved channel names. You can refresh names from the Variables window.</li>
+  <li><strong>Insert variables anywhere</strong> — Variables can be inserted into the focused editor, and insertion controls now sit on each row. Shared variables can be deleted from the window.</li>
+  <li><strong>10-segment mic meter</strong> — The Shure mic meter now has 10 segments with a -60 dBFS floor for finer readings on quiet signals.</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul>
+  <li><strong>Transcription profanity filter</strong> — The filter now catches inflected words and already-censored text, and stays applied.</li>
+  <li><strong>ProPresenter slide numbers</strong> — Slide numbers now come from ProPresenter's slide index, and disabled slides are counted correctly in group ranges.</li>
+  <li><strong>Variables window</strong> — Variables stay scoped to Relay, the window no longer reopens on launch, and its shortcut no longer collides with the system screenshot shortcut.</li>
 </ul>
   <p class="footer"><a href="https://help.ondeckapps.com/beta-changelog#version-122">View the full Relay changelog</a></p>
 </body>

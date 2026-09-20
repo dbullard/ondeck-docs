@@ -4,8 +4,8 @@
     {
       "version": "1.2.2",
       "app_version": "1.2.2",
-      "build": "61",
-      "html": "<h3>Fixes</h3>\n<ul>\n  <li><strong>Shure wireless reliability</strong> — Resolved AD4Q live-show issues: gaps in QLX-D meter updates, unfair queuing under heavy channel load, and an inaccurate battery percentage display.</li>\n  <li><strong>Transcription profanity filter</strong> — Fixed a bug where profanity filter settings for transcription input didn't persist between sessions.</li>\n</ul>"
+      "build": "62",
+      "html": "<h3>New</h3>\n<ul>\n  <li><strong>Shared Values &amp; Variables</strong> — A new Variables window lets you define values once and use them across text inputs. Values are grouped by source, with plus controls for adding from each source, and the window stays above Relay while you work.</li>\n  <li><strong>Wireless variables</strong> — Suggested wireless telemetry variables are created automatically in live mode, labeled with your saved channel names. You can refresh names from the Variables window.</li>\n  <li><strong>Insert variables anywhere</strong> — Variables can be inserted into the focused editor, and insertion controls now sit on each row. Shared variables can be deleted from the window.</li>\n  <li><strong>10-segment mic meter</strong> — The Shure mic meter now has 10 segments with a -60 dBFS floor for finer readings on quiet signals.</li>\n</ul>\n\n<h3>Fixes</h3>\n<ul>\n  <li><strong>Transcription profanity filter</strong> — The filter now catches inflected words and already-censored text, and stays applied.</li>\n  <li><strong>ProPresenter slide numbers</strong> — Slide numbers now come from ProPresenter's slide index, and disabled slides are counted correctly in group ranges.</li>\n  <li><strong>Variables window</strong> — Variables stay scoped to Relay, the window no longer reopens on launch, and its shortcut no longer collides with the system screenshot shortcut.</li>\n</ul>"
     },
     {
       "version": "1.2.1",
