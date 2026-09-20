@@ -1,12 +1,14 @@
 ---
 title: "Integrations overview: connect your production tools"
 description: "Connect Relay to the software and hardware your team already uses."
-sidebarTitle: "Overview"
+sidebarTitle: "Integrations overview"
 ---
 
 Relay connects to the software and hardware around your production so operators can see everything in one place and act without constant app switching.
 
 Software connections are configured under `Relay > Settings` → <Icon icon="link" /> **External Connections**. Hardware devices are managed under `Relay > Settings` → <Icon icon="hard-drive" /> **External Devices**.
+
+## Production software
 
 <CardGroup cols={2}>
   <Card title="Planning Center" icon="calendar-check" href="/integrations/planning-center">
@@ -15,21 +17,33 @@ Software connections are configured under `Relay > Settings` → <Icon icon="lin
   <Card title="ProPresenter" icon="monitor-play" href="/integrations/propresenter">
     Show live slide status and trigger ProPresenter actions from Automation View.
   </Card>
+  <Card title="YouTube Live `Beta`" icon="youtube" href="/integrations/youtube-live">
+    Monitor viewer count, chat activity, and stream health for a live broadcast.
+  </Card>
+  <Card title="NDI Video `Beta`" icon="video" href="/integrations/ndi">
+    Monitor NDI® video sources over the network with quality tiers and NIC-aware routing.
+  </Card>
+</CardGroup>
+
+## Hardware and lighting
+
+<CardGroup cols={2}>
   <Card title="Audio Consoles" icon="sliders-horizontal" href="/integrations/audio-consoles">
     Sync channel names, recall scenes, and send assignments to supported consoles.
   </Card>
   <Card title="Wireless Devices" icon="radio" href="/integrations/wireless-devices">
-    Monitor Shure, Sennheiser, and other supported wireless status in real time.
+    Monitor Shure and Sennheiser wireless status in real time.
   </Card>
-  <Card title="Vista" icon="light-bulb" href="/dashboards/nodes/actions#vista-beta">
-    Export cue lists and trigger basic Vista OSC commands from Automation View.
-  </Card>
-  <Card title="Smart Lights" icon="lightbulb-2" href="/dashboards/nodes/actions#smart-light-control-beta">
+  <Card title="Smart Lights `Beta`" icon="lightbulb" href="/integrations/lighting">
     Control Philips Hue and Govee lighting as part of an automation flow.
   </Card>
-  <Card title="YouTube Live" icon="youtube" href="/account/beta-features#youtube-stream-monitor">
-    Monitor viewer count, chat activity, and stream health for a live broadcast.
+  <Card title="Vista `Beta`" icon="lamp" href="/integrations/vista">
+    Export cue lists and trigger basic Vista OSC commands from Automation View.
   </Card>
 </CardGroup>
 
-<Note>Vista, Smart Lights, and YouTube Live are currently documented as automation destinations rather than standalone connection pages — see the linked sections for setup.</Note>
+## Control protocols
+
+OSC, MIDI, and LAN sharing have their own section. See [Protocols](/protocols/overview).
+
+<Tip>Not sure how to add a device? The [Setup Wizard](/guides/setup-wizard) can find devices and connect services for you.</Tip>

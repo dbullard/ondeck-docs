@@ -17,7 +17,13 @@
     "eyebrows": "breadcrumbs"
   },
   "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+    "options": [
+      "copy",
+      "view",
+      "assistant",
+      "mcp",
+      "add-mcp"
+    ]
   },
   "navigation": {
     "directory": "card",
@@ -33,7 +39,7 @@
           {
             "product": "Get Started",
             "icon": "rocket",
-            "description": "Install Relay, learn the core concepts, and build your first dashboard.",
+            "description": "Install Relay, run the Setup Wizard, and learn the core concepts.",
             "groups": [
               {
                 "group": "Get Started",
@@ -41,29 +47,31 @@
                 "root": "introduction",
                 "pages": [
                   "quickstart",
-                  "core-concepts",
-                  "guides/first-dashboard"
+                  "guides/setup-wizard",
+                  "core-concepts"
                 ]
               }
             ]
           },
           {
-            "product": "Building Dashboards",
+            "product": "Build Dashboards",
             "icon": "layout-dashboard",
-            "description": "Create tiles, add modules, and run your show in Live Mode.",
+            "description": "Create tiles, add modules, use variables, and run your show in Live Mode.",
             "groups": [
               {
-                "group": "Building Dashboards",
+                "group": "Build Dashboards",
                 "expanded": true,
                 "root": "dashboards/overview",
                 "pages": [
                   "dashboards/tiles",
                   "dashboards/modules",
+                  "dashboards/variables",
                   "dashboards/live-mode"
                 ]
               },
               {
-                "group": "Module Guides",
+                "group": "Module guides",
+                "expanded": false,
                 "pages": [
                   "dashboards/modules/people-planning",
                   "dashboards/modules/audio-visual",
@@ -93,21 +101,44 @@
             ]
           },
           {
-            "product": "Connections",
+            "product": "Integrations",
             "icon": "plug",
-            "description": "Connect Planning Center, ProPresenter, consoles, wireless devices, and network protocols.",
+            "description": "Connect Planning Center, ProPresenter, consoles, wireless devices, lighting, and video.",
             "groups": [
               {
                 "group": "Integrations",
                 "expanded": true,
-                "root": "integrations/overview",
+                "pages": [
+                  "integrations/overview"
+                ]
+              },
+              {
+                "group": "Production software",
+                "expanded": true,
                 "pages": [
                   "integrations/planning-center",
                   "integrations/propresenter",
-                  "integrations/audio-consoles",
-                  "integrations/wireless-devices"
+                  "integrations/youtube-live",
+                  "integrations/ndi"
                 ]
               },
+              {
+                "group": "Hardware and lighting",
+                "expanded": true,
+                "pages": [
+                  "integrations/audio-consoles",
+                  "integrations/wireless-devices",
+                  "integrations/lighting",
+                  "integrations/vista"
+                ]
+              }
+            ]
+          },
+          {
+            "product": "Protocols",
+            "icon": "radio",
+            "description": "Send and receive OSC and MIDI, and share tabs over your network.",
+            "groups": [
               {
                 "group": "Protocols",
                 "expanded": true,
@@ -121,33 +152,29 @@
             ]
           },
           {
-            "product": "Account, Support & Beta",
+            "product": "Account & Support",
             "icon": "circle-user",
-            "description": "Manage your license, permissions, updates, support, and beta workflows.",
+            "description": "Manage your license, permissions, updates, and support, and read release notes.",
             "groups": [
               {
-                "group": "Account, Support & Beta",
+                "group": "Account & Support",
                 "expanded": true,
                 "root": "account/license",
                 "pages": [
                   "account/permissions",
                   "account/updates",
+                  "troubleshooting",
                   "account/support",
                   "account/beta-features"
                 ]
-              }
-            ]
-          },
-          {
-            "product": "Release Notes",
-            "icon": "newspaper",
-            "description": "Review the latest Relay release notes and beta release notes.",
-            "groups": [
+              },
               {
-                "group": "Release Notes",
+                "group": "Release notes",
                 "expanded": true,
-                "root": "changelog",
-                "pages": ["changelog", "beta-changelog"]
+                "pages": [
+                  "changelog",
+                  "beta-changelog"
+                ]
               }
             ]
           }
@@ -156,7 +183,20 @@
     ]
   },
   "navbar": {
-    "links": []
+    "links": [
+      {
+        "label": "Support",
+        "href": "/account/support"
+      },
+      {
+        "label": "Changelog",
+        "href": "/changelog"
+      },
+      {
+        "label": "Troubleshooting",
+        "href": "/troubleshooting"
+      }
+    ]
   },
   "footer": {
     "socials": {}
@@ -171,5 +211,11 @@
   "appearance": {
     "default": "dark",
     "strict": true
-  }
+  },
+  "redirects": [
+    {
+      "source": "/guides/first-dashboard",
+      "destination": "/quickstart"
+    }
+  ]
 }

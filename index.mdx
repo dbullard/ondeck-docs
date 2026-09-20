@@ -10,46 +10,84 @@ mode: custom
       Relay Documentation
     </h1>
     <p className="text-balance text-sm leading-relaxed tracking-tight text-gray-600 dark:text-gray-400">
-      Build dashboards, connect production tools, and run live workflows confidently with Relay for Mac and iPad.
+      Build dashboards, connect production tools, and run live workflows confidently with Relay for Mac and iPad (Coming Soon).
     </p>
   </div>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-    <Card
-      title={<span className="product-guide-feature-card-title">Get Started</span>}
-      icon="rocket"
-      href="/introduction"
-      className="product-guide-feature-card"
-      size={64}
-    >
-      <span className="product-guide-feature-card-description">Learn the Relay workflow, set up your first dashboard, and get ready for Live Mode.</span>
-    </Card>
-
-    <a
-      href="/dashboards/overview"
-      className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-    >
-      <Icon icon="layout-dashboard" color="rgb(var(--primary))" size={18} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Building Dashboards</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          Create tiles, add modules, organize tabs, and operate in Live Mode.
-        </span>
-      </div>
-    </a>
-    <a
-      href="/integrations/overview"
-      className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-    >
-      <Icon icon="plug" color="rgb(var(--primary))" size={18} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Connections</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          Connect Planning Center, ProPresenter, consoles, wireless devices, and network protocols.
-        </span>
-      </div>
-    </a>
-  </div>
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <a
+        href="/introduction"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="rocket" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Get Started</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Install Relay, run the Setup Wizard, and learn the core concepts.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/dashboards/overview"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="layout-dashboard" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Build Dashboards</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Create tiles, add modules, use variables, and operate in Live Mode.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/dashboards/automation"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="workflow" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Automation</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Connect triggers, actions, and utilities to make Relay respond to events.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/integrations/overview"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="plug" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Integrations</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Planning Center, ProPresenter, consoles, wireless devices, lighting, and video.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/protocols/overview"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="radio" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Protocols</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            OSC, MIDI, and LAN sharing over your network.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/account/license"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="circle-user" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Account & Support</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            License, permissions, updates, support, beta features, and release notes.
+          </span>
+        </div>
+      </a>
+    </div>
 
   <hr className="border-0 border-t border-border" />
 
@@ -57,6 +95,18 @@ mode: custom
     <h2 className="text-xl font-semibold leading-normal text-gray-900 dark:text-gray-50">Common tasks</h2>
 
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <a
+        href="/guides/setup-wizard"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="wand-sparkles" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Run the Setup Wizard</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Let Relay find your devices and build a starter dashboard.
+          </span>
+        </div>
+      </a>
       <a
         href="/dashboards/tiles"
         className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
@@ -70,6 +120,18 @@ mode: custom
         </div>
       </a>
       <a
+        href="/dashboards/variables"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="variable" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Use shared variables</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Define a value once and reuse it in text and automations.
+          </span>
+        </div>
+      </a>
+      <a
         href="/integrations/planning-center"
         className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
       >
@@ -77,19 +139,19 @@ mode: custom
         <div className="flex flex-col gap-1">
           <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Connect Planning Center</span>
           <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Show plans, assignments, service times, and Services Live on your dashboard.
+            Show plans, assignments, service times, and Services Live.
           </span>
         </div>
       </a>
       <a
-        href="/dashboards/automation"
+        href="/integrations/wireless-devices"
         className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
       >
-        <Icon icon="workflow" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <Icon icon="radio" color="rgb(var(--primary))" size={18} className="shrink-0" />
         <div className="flex flex-col gap-1">
-          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Build automations</span>
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Monitor wireless mics</span>
           <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Connect triggers, actions, and destinations in Automation View.
+            Track battery, RF, and audio for Shure and Sennheiser.
           </span>
         </div>
       </a>
@@ -101,31 +163,31 @@ mode: custom
         <div className="flex flex-col gap-1">
           <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Share over LAN</span>
           <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Mirror tabs to other Relay clients or share a browser view-only link.
+            Mirror or sync tabs across Relay devices.
           </span>
         </div>
       </a>
       <a
-        href="/protocols/osc"
+        href="/troubleshooting"
         className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
       >
-        <Icon icon="radio" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <Icon icon="life-buoy" color="rgb(var(--primary))" size={18} className="shrink-0" />
         <div className="flex flex-col gap-1">
-          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Set up OSC</span>
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Fix a problem</span>
           <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Receive and send OSC messages for control and automation workflows.
+            Find the right troubleshooting section by topic.
           </span>
         </div>
       </a>
       <a
-        href="/account/beta-features"
+        href="/changelog"
         className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
       >
-        <Icon icon="test-tubes" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <Icon icon="newspaper" color="rgb(var(--primary))" size={18} className="shrink-0" />
         <div className="flex flex-col gap-1">
-          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">Beta workflows</span>
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-50">What's new</span>
           <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Understand beta-only modules, graph features, diagnostics, and safe testing practices.
+            Read the latest release notes.
           </span>
         </div>
       </a>
