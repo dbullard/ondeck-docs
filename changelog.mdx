@@ -6,6 +6,29 @@ sidebarTitle: "Changelog"
 
 Relay release notes are organized by version. Sparkle update feeds can link to each version directly using the per-version anchors on this page.
 
+## Version 1.2.2 <a id="version-122"></a>
+
+A quick confession: the last release was 1.2, which makes this one 1.2.1. Somebody (me) fat-fingered the version number and typed 1.2.2. There is no 1.2.1, and we're committing to the bit. Think of it as a bonus patch you never had to install.
+
+#### New
+
+- **Setup Wizard** — A guided first-run wizard finds your devices, connects your services, suggests starter tiles, and builds your first dashboard with a live layout preview. Free and Pro users get their own step sequences. You can reopen it anytime from the File menu on Mac or the ellipsis menu on iOS.
+- **Shared Values & Variables** — A new Variables window lets you define values once and use them across text inputs and automations. Wireless telemetry variables are suggested automatically in live mode and labeled with your saved channel names.
+- **Sennheiser Spectera monitoring** — Monitor Spectera systems with live state updates, pinned certificate trust, authenticated connection tests, and diagnostics logging. Newer mobile device schemas now decode correctly.
+- **Shure wireless overhaul** — A new 10-segment mic meter with a -60 dBFS floor gives finer readings on quiet signals. More accurate RF and battery readings for AD4Q, Axient, and QLX-D. Stuck connections now reconnect on their own, Overview polling no longer starves channels or misses presence updates, and ANX4 now defaults to TCP.
+- **Option-drag tile snapping** — Hold Option while dragging a tile to snap it into a region of the canvas, with a live preview of where it will land.
+- **OSC automation** — Improved OSC sending and automation, plus better device discovery during onboarding.
+- **Close Home** — A new button dismisses the launch screen and returns you to your dashboard.
+
+#### Improvements & Fixes
+
+- **Relay Mobile** — Fixes for iPad exporting, Planning Center sign-in cancellation, and upgrade prompts on locked modules. The Settings inspector now closes properly, and copy is now written for each platform.
+- **Transcription profanity filter** — The filter now catches inflected words and already-censored text, and its settings persist between sessions.
+- **ProPresenter** — Slide numbers now come from ProPresenter's slide index, and disabled slides are counted correctly in group ranges.
+- **Planning Center** — Position assignment candidates now stay in sync with live data.
+- **Discovery & stability** — Fixed data races and socket handling in device discovery scans, and made sure scan completions aren't dropped mid-cancel.
+- **What's New** — Entries are now shown only for the version you have installed.
+
 ## Version 1.2 <a id="version-12"></a>
 
 ## What's New in Relay 1.2
