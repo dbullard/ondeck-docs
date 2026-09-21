@@ -203,3 +203,46 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
   border-left-color: #7fa9a1;
   background: rgb(127 169 161 / 0.1);
 }
+
+.ondeck-splash {
+  margin: 1rem 0 2rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid #293b58;
+  background: radial-gradient(circle at 90% 0%, rgb(52 200 238 / 0.2), transparent 35%), linear-gradient(135deg, #0f172a 0%, #13243b 55%, #2140b8 100%);
+  color: white;
+  text-align: center;
+}
+
+.ondeck-splash-logo {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+}
+
+.ondeck-splash-eyebrow {
+  margin: 0 0 0.5rem;
+  color: #9fe8f7;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ondeck-splash h1 {
+  margin: 0;
+  color: white !important;
+}
+
+.ondeck-splash-intro {
+  max-width: 34rem;
+  margin: 0.75rem auto 0;
+  color: rgb(255 255 255 / 0.78) !important;
+}
+
+.ondeck-splash-footnote {
+  margin-top: 1.25rem;
+  color: rgb(var(--gray-500));
+  font-size: 0.9rem;
+  text-align: center;
+}

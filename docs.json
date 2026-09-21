@@ -44,43 +44,84 @@
               {
                 "group": "Get Started",
                 "expanded": true,
-                "root": "introduction",
-                "pages": ["quickstart", "guides/setup-wizard", "core-concepts"]
+                "root": "relay/introduction",
+                "pages": [
+                  "relay/quickstart",
+                  "relay/guides/setup-wizard",
+                  "relay/core-concepts"
+                ]
               },
               {
                 "group": "Build Dashboards",
                 "expanded": true,
-                "root": "dashboards/overview",
-                "pages": ["dashboards/tiles", "dashboards/modules", "dashboards/variables", "dashboards/live-mode"]
+                "root": "relay/dashboards/overview",
+                "pages": [
+                  "relay/dashboards/tiles",
+                  "relay/dashboards/modules",
+                  "relay/dashboards/variables",
+                  "relay/dashboards/live-mode"
+                ]
               },
               {
                 "group": "Module guides",
                 "expanded": false,
-                "pages": ["dashboards/modules/people-planning", "dashboards/modules/audio-visual", "dashboards/modules/video-presentation", "dashboards/modules/wireless", "dashboards/modules/utility"]
+                "pages": [
+                  "relay/dashboards/modules/people-planning",
+                  "relay/dashboards/modules/audio-visual",
+                  "relay/dashboards/modules/video-presentation",
+                  "relay/dashboards/modules/wireless",
+                  "relay/dashboards/modules/utility"
+                ]
               },
               {
                 "group": "Automation",
                 "expanded": true,
-                "root": "dashboards/automation",
-                "pages": ["dashboards/nodes/triggers", "dashboards/nodes/actions", "dashboards/nodes/utilities", "dashboards/nodes/sources"]
+                "root": "relay/dashboards/automation",
+                "pages": [
+                  "relay/dashboards/nodes/triggers",
+                  "relay/dashboards/nodes/actions",
+                  "relay/dashboards/nodes/utilities",
+                  "relay/dashboards/nodes/sources"
+                ]
               },
               {
                 "group": "Integrations",
                 "expanded": true,
-                "root": "integrations/overview",
-                "pages": ["integrations/planning-center", "integrations/propresenter", "integrations/youtube-live", "integrations/ndi", "integrations/audio-consoles", "integrations/wireless-devices", "integrations/lighting", "integrations/vista"]
+                "root": "relay/integrations/overview",
+                "pages": [
+                  "relay/integrations/planning-center",
+                  "relay/integrations/propresenter",
+                  "relay/integrations/youtube-live",
+                  "relay/integrations/ndi",
+                  "relay/integrations/audio-consoles",
+                  "relay/integrations/wireless-devices",
+                  "relay/integrations/lighting",
+                  "relay/integrations/vista"
+                ]
               },
               {
                 "group": "Protocols",
                 "expanded": true,
-                "root": "protocols/overview",
-                "pages": ["protocols/osc", "protocols/midi", "protocols/lan-sharing"]
+                "root": "relay/protocols/overview",
+                "pages": [
+                  "relay/protocols/osc",
+                  "relay/protocols/midi",
+                  "relay/protocols/lan-sharing"
+                ]
               },
               {
                 "group": "Account & Support",
                 "expanded": true,
-                "root": "account/license",
-                "pages": ["account/permissions", "account/updates", "troubleshooting", "account/support", "account/beta-features", "changelog", "beta-changelog"]
+                "root": "relay/account/license",
+                "pages": [
+                  "relay/account/permissions",
+                  "relay/account/updates",
+                  "relay/troubleshooting",
+                  "relay/account/support",
+                  "relay/account/beta-features",
+                  "relay/changelog",
+                  "relay/beta-changelog"
+                ]
               }
             ]
           },
@@ -93,25 +134,37 @@
                 "group": "Get Started",
                 "expanded": true,
                 "root": "rivr/introduction",
-                "pages": ["rivr/quickstart", "rivr/find-a-river"]
+                "pages": [
+                  "rivr/quickstart",
+                  "rivr/find-a-river"
+                ]
               },
               {
                 "group": "Conditions & Safety",
                 "expanded": true,
                 "root": "rivr/river-conditions",
-                "pages": ["rivr/alerts", "rivr/regulations"]
+                "pages": [
+                  "rivr/alerts",
+                  "rivr/regulations"
+                ]
               },
               {
                 "group": "Fishing Tools",
                 "expanded": true,
                 "root": "rivr/rig-advice",
-                "pages": ["rivr/fly-box", "rivr/trip-log"]
+                "pages": [
+                  "rivr/fly-box",
+                  "rivr/trip-log"
+                ]
               },
               {
                 "group": "Settings & Privacy",
                 "expanded": true,
                 "root": "rivr/settings",
-                "pages": ["rivr/data-and-privacy", "rivr/troubleshooting"]
+                "pages": [
+                  "rivr/data-and-privacy",
+                  "rivr/troubleshooting"
+                ]
               }
             ]
           }
@@ -123,15 +176,15 @@
     "links": [
       {
         "label": "Support",
-        "href": "/account/support"
+        "href": "/relay/account/support"
       },
       {
         "label": "Changelog",
-        "href": "/changelog"
+        "href": "/relay/changelog"
       },
       {
         "label": "Troubleshooting",
-        "href": "/troubleshooting"
+        "href": "/relay/troubleshooting"
       }
     ]
   },
@@ -152,7 +205,167 @@
   "redirects": [
     {
       "source": "/guides/first-dashboard",
-      "destination": "/quickstart"
+      "destination": "/relay/quickstart"
+    },
+    {
+      "source": "/account/beta-features",
+      "destination": "/relay/account/beta-features"
+    },
+    {
+      "source": "/account/license",
+      "destination": "/relay/account/license"
+    },
+    {
+      "source": "/account/permissions",
+      "destination": "/relay/account/permissions"
+    },
+    {
+      "source": "/account/support",
+      "destination": "/relay/account/support"
+    },
+    {
+      "source": "/account/updates",
+      "destination": "/relay/account/updates"
+    },
+    {
+      "source": "/beta-changelog",
+      "destination": "/relay/beta-changelog"
+    },
+    {
+      "source": "/changelog",
+      "destination": "/relay/changelog"
+    },
+    {
+      "source": "/core-concepts",
+      "destination": "/relay/core-concepts"
+    },
+    {
+      "source": "/dashboards/automation",
+      "destination": "/relay/dashboards/automation"
+    },
+    {
+      "source": "/dashboards/live-mode",
+      "destination": "/relay/dashboards/live-mode"
+    },
+    {
+      "source": "/dashboards/modules/audio-visual",
+      "destination": "/relay/dashboards/modules/audio-visual"
+    },
+    {
+      "source": "/dashboards/modules/people-planning",
+      "destination": "/relay/dashboards/modules/people-planning"
+    },
+    {
+      "source": "/dashboards/modules/utility",
+      "destination": "/relay/dashboards/modules/utility"
+    },
+    {
+      "source": "/dashboards/modules/video-presentation",
+      "destination": "/relay/dashboards/modules/video-presentation"
+    },
+    {
+      "source": "/dashboards/modules/wireless",
+      "destination": "/relay/dashboards/modules/wireless"
+    },
+    {
+      "source": "/dashboards/modules",
+      "destination": "/relay/dashboards/modules"
+    },
+    {
+      "source": "/dashboards/nodes/actions",
+      "destination": "/relay/dashboards/nodes/actions"
+    },
+    {
+      "source": "/dashboards/nodes/sources",
+      "destination": "/relay/dashboards/nodes/sources"
+    },
+    {
+      "source": "/dashboards/nodes/triggers",
+      "destination": "/relay/dashboards/nodes/triggers"
+    },
+    {
+      "source": "/dashboards/nodes/utilities",
+      "destination": "/relay/dashboards/nodes/utilities"
+    },
+    {
+      "source": "/dashboards/overview",
+      "destination": "/relay/dashboards/overview"
+    },
+    {
+      "source": "/dashboards/tiles",
+      "destination": "/relay/dashboards/tiles"
+    },
+    {
+      "source": "/dashboards/variables",
+      "destination": "/relay/dashboards/variables"
+    },
+    {
+      "source": "/guides/setup-wizard",
+      "destination": "/relay/guides/setup-wizard"
+    },
+    {
+      "source": "/integrations/audio-consoles",
+      "destination": "/relay/integrations/audio-consoles"
+    },
+    {
+      "source": "/integrations/lighting",
+      "destination": "/relay/integrations/lighting"
+    },
+    {
+      "source": "/integrations/ndi",
+      "destination": "/relay/integrations/ndi"
+    },
+    {
+      "source": "/integrations/overview",
+      "destination": "/relay/integrations/overview"
+    },
+    {
+      "source": "/integrations/planning-center",
+      "destination": "/relay/integrations/planning-center"
+    },
+    {
+      "source": "/integrations/propresenter",
+      "destination": "/relay/integrations/propresenter"
+    },
+    {
+      "source": "/integrations/vista",
+      "destination": "/relay/integrations/vista"
+    },
+    {
+      "source": "/integrations/wireless-devices",
+      "destination": "/relay/integrations/wireless-devices"
+    },
+    {
+      "source": "/integrations/youtube-live",
+      "destination": "/relay/integrations/youtube-live"
+    },
+    {
+      "source": "/introduction",
+      "destination": "/relay/introduction"
+    },
+    {
+      "source": "/protocols/lan-sharing",
+      "destination": "/relay/protocols/lan-sharing"
+    },
+    {
+      "source": "/protocols/midi",
+      "destination": "/relay/protocols/midi"
+    },
+    {
+      "source": "/protocols/osc",
+      "destination": "/relay/protocols/osc"
+    },
+    {
+      "source": "/protocols/overview",
+      "destination": "/relay/protocols/overview"
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/relay/quickstart"
+    },
+    {
+      "source": "/troubleshooting",
+      "destination": "/relay/troubleshooting"
     }
   ]
 }
