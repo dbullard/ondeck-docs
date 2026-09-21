@@ -10,13 +10,23 @@ description: Choose the OnDeck app you need help with.
   <p className="ondeck-splash-intro">Find setup guides, feature help, troubleshooting, and release notes for your OnDeck app.</p>
 </div>
 
-<CardGroup cols={2}>
-  <Card title="Relay" icon="radio-tower" href="/relay/introduction">
-    Build live production dashboards, automations, and integrations.
-  </Card>
-  <Card title="Rivr" icon="fish" href="/rivr/introduction">
-    Follow rivers, understand conditions, and keep your fishing log.
-  </Card>
-</CardGroup>
+<div className="app-choice-grid">
+  <a className="app-choice-card" href="/relay/introduction">
+    <img src="/images/relay-app-icon.png" alt="" />
+    <div>
+      <p className="app-choice-card-eyebrow">Production toolkit</p>
+      <h2>Relay</h2>
+      <p>Build live production dashboards, automations, and integrations.</p>
+    </div>
+  </a>
+  <a className="app-choice-card" href="/rivr/introduction">
+    <img src="/images/rivr-app-icon.png" alt="" />
+    <div>
+      <p className="app-choice-card-eyebrow">Fishing companion</p>
+      <h2>Rivr</h2>
+      <p>Follow rivers, understand conditions, and keep your fishing log.</p>
+    </div>
+  </a>
+</div>
 
 <div className="ondeck-splash-footnote">You can switch apps at any time from the product selector.</div>

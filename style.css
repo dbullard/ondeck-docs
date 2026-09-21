@@ -246,3 +246,74 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
   font-size: 0.9rem;
   text-align: center;
 }
+
+.app-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.app-choice-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 9rem;
+  padding: 1.25rem;
+  border: 1px solid rgb(var(--gray-200));
+  border-radius: 1rem;
+  background: rgb(var(--gray-50));
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.app-choice-card:hover {
+  border-color: rgb(var(--primary));
+  box-shadow: 0 0.75rem 2rem rgb(15 23 42 / 0.12);
+  transform: translateY(-2px);
+}
+
+.app-choice-card img {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex: 0 0 auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.app-choice-card h2 {
+  margin: 0.15rem 0 0.35rem;
+  color: inherit !important;
+  font-size: 1.25rem;
+}
+
+.app-choice-card p {
+  margin: 0;
+  color: rgb(var(--gray-600)) !important;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.app-choice-card .app-choice-card-eyebrow {
+  color: rgb(var(--primary)) !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dark .app-choice-card {
+  border-color: rgb(var(--gray-800));
+  background: rgb(var(--gray-900));
+}
+
+.dark .app-choice-card p:not(.app-choice-card-eyebrow) {
+  color: rgb(var(--gray-400)) !important;
+}
+
+@media (max-width: 700px) {
+  .app-choice-grid {
+    grid-template-columns: 1fr;
+  }
+}
