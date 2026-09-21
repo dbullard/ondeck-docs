@@ -8,8 +8,8 @@
     "light": "#34C8EE",
     "dark": "#3B2FE0"
   },
-  "favicon": "/images/relay-mark.png",
-  "logo": "/images/relay-mark.png",
+  "favicon": "/images/ondeck-logo.png",
+  "logo": "/images/ondeck-logo.png",
   "icons": {
     "library": "lucide"
   },
