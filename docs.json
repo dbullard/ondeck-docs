@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Relay",
-  "description": "Documentation for Relay - a Mac and iPad (Coming Soon) dashboard app for live production teams.",
+  "name": "OnDeck",
+  "description": "Support documentation for Relay and Rivr by OnDeck.",
   "colors": {
     "primary": "#3C63EF",
     "light": "#34C8EE",
@@ -37,144 +37,81 @@
         },
         "products": [
           {
-            "product": "Get Started",
-            "icon": "rocket",
-            "description": "Install Relay, run the Setup Wizard, and learn the core concepts.",
+            "product": "Relay",
+            "icon": "radio-tower",
+            "description": "Build live production dashboards, automations, and integrations.",
             "groups": [
               {
                 "group": "Get Started",
                 "expanded": true,
                 "root": "introduction",
-                "pages": [
-                  "quickstart",
-                  "guides/setup-wizard",
-                  "core-concepts"
-                ]
-              }
-            ]
-          },
-          {
-            "product": "Build Dashboards",
-            "icon": "layout-dashboard",
-            "description": "Create tiles, add modules, use variables, and run your show in Live Mode.",
-            "groups": [
+                "pages": ["quickstart", "guides/setup-wizard", "core-concepts"]
+              },
               {
                 "group": "Build Dashboards",
                 "expanded": true,
                 "root": "dashboards/overview",
-                "pages": [
-                  "dashboards/tiles",
-                  "dashboards/modules",
-                  "dashboards/variables",
-                  "dashboards/live-mode"
-                ]
+                "pages": ["dashboards/tiles", "dashboards/modules", "dashboards/variables", "dashboards/live-mode"]
               },
               {
                 "group": "Module guides",
                 "expanded": false,
-                "pages": [
-                  "dashboards/modules/people-planning",
-                  "dashboards/modules/audio-visual",
-                  "dashboards/modules/video-presentation",
-                  "dashboards/modules/wireless",
-                  "dashboards/modules/utility"
-                ]
-              }
-            ]
-          },
-          {
-            "product": "Automation",
-            "icon": "workflow",
-            "description": "Build automations with triggers, actions, utility nodes, and sources.",
-            "groups": [
+                "pages": ["dashboards/modules/people-planning", "dashboards/modules/audio-visual", "dashboards/modules/video-presentation", "dashboards/modules/wireless", "dashboards/modules/utility"]
+              },
               {
                 "group": "Automation",
                 "expanded": true,
                 "root": "dashboards/automation",
-                "pages": [
-                  "dashboards/nodes/triggers",
-                  "dashboards/nodes/actions",
-                  "dashboards/nodes/utilities",
-                  "dashboards/nodes/sources"
-                ]
-              }
-            ]
-          },
-          {
-            "product": "Integrations",
-            "icon": "plug",
-            "description": "Connect Planning Center, ProPresenter, consoles, wireless devices, lighting, and video.",
-            "groups": [
+                "pages": ["dashboards/nodes/triggers", "dashboards/nodes/actions", "dashboards/nodes/utilities", "dashboards/nodes/sources"]
+              },
               {
                 "group": "Integrations",
                 "expanded": true,
-                "pages": [
-                  "integrations/overview"
-                ]
+                "root": "integrations/overview",
+                "pages": ["integrations/planning-center", "integrations/propresenter", "integrations/youtube-live", "integrations/ndi", "integrations/audio-consoles", "integrations/wireless-devices", "integrations/lighting", "integrations/vista"]
               },
-              {
-                "group": "Production software",
-                "expanded": true,
-                "pages": [
-                  "integrations/planning-center",
-                  "integrations/propresenter",
-                  "integrations/youtube-live",
-                  "integrations/ndi"
-                ]
-              },
-              {
-                "group": "Hardware and lighting",
-                "expanded": true,
-                "pages": [
-                  "integrations/audio-consoles",
-                  "integrations/wireless-devices",
-                  "integrations/lighting",
-                  "integrations/vista"
-                ]
-              }
-            ]
-          },
-          {
-            "product": "Protocols",
-            "icon": "radio",
-            "description": "Send and receive OSC and MIDI, and share tabs over your network.",
-            "groups": [
               {
                 "group": "Protocols",
                 "expanded": true,
                 "root": "protocols/overview",
-                "pages": [
-                  "protocols/osc",
-                  "protocols/midi",
-                  "protocols/lan-sharing"
-                ]
-              }
-            ]
-          },
-          {
-            "product": "Account & Support",
-            "icon": "circle-user",
-            "description": "Manage your license, permissions, updates, and support, and read release notes.",
-            "groups": [
+                "pages": ["protocols/osc", "protocols/midi", "protocols/lan-sharing"]
+              },
               {
                 "group": "Account & Support",
                 "expanded": true,
                 "root": "account/license",
-                "pages": [
-                  "account/permissions",
-                  "account/updates",
-                  "troubleshooting",
-                  "account/support",
-                  "account/beta-features"
-                ]
+                "pages": ["account/permissions", "account/updates", "troubleshooting", "account/support", "account/beta-features", "changelog", "beta-changelog"]
+              }
+            ]
+          },
+          {
+            "product": "Rivr",
+            "icon": "fish",
+            "description": "Follow rivers, understand conditions, and keep your fishing log.",
+            "groups": [
+              {
+                "group": "Get Started",
+                "expanded": true,
+                "root": "rivr/introduction",
+                "pages": ["rivr/quickstart", "rivr/find-a-river"]
               },
               {
-                "group": "Release notes",
+                "group": "Conditions & Safety",
                 "expanded": true,
-                "pages": [
-                  "changelog",
-                  "beta-changelog"
-                ]
+                "root": "rivr/river-conditions",
+                "pages": ["rivr/alerts", "rivr/regulations"]
+              },
+              {
+                "group": "Fishing Tools",
+                "expanded": true,
+                "root": "rivr/rig-advice",
+                "pages": ["rivr/fly-box", "rivr/trip-log"]
+              },
+              {
+                "group": "Settings & Privacy",
+                "expanded": true,
+                "root": "rivr/settings",
+                "pages": ["rivr/data-and-privacy", "rivr/troubleshooting"]
               }
             ]
           }
