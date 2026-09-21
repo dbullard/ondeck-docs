@@ -317,3 +317,29 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
     grid-template-columns: 1fr;
   }
 }
+
+/* Use the real product artwork in Mintlify's product switcher. The switcher
+   still uses Mintlify's accessible product controls; this only replaces the
+   decorative icon masks. */
+[data-component-part="products-selector-item"] .nav-dropdown-products-selector-item-icon svg,
+[data-component-part="products-selector-trigger"] > svg:first-child {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  border-radius: 0.3rem;
+  background-color: transparent !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+[data-component-part="products-selector-item"]:nth-child(1) .nav-dropdown-products-selector-item-icon svg,
+body:has([data-component-part="products-selector-item"][href="/relay/introduction"][aria-selected="true"]) [data-component-part="products-selector-trigger"] > svg:first-child {
+  background-image: url('/images/relay-app-icon.png') !important;
+}
+
+[data-component-part="products-selector-item"]:nth-child(2) .nav-dropdown-products-selector-item-icon svg,
+body:has([data-component-part="products-selector-item"][href="/rivr/introduction"][aria-selected="true"]) [data-component-part="products-selector-trigger"] > svg:first-child {
+  background-image: url('/images/rivr-app-icon.png') !important;
+}
