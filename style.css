@@ -145,3 +145,61 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
     color: rgb(var(--gray-50) / 50%) !important;
   }
 }
+
+/* Rivr field-guide treatment. The shared OnDeck shell remains global; these
+   classes give Rivr pages a quiet water-and-paper identity inside the content. */
+.rivr-hero {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem;
+  border: 1px solid #b9c9c3;
+  border-radius: 1rem;
+  background: radial-gradient(circle at 92% 12%, rgb(127 169 161 / 0.3), transparent 34%), linear-gradient(135deg, #f4efe0 0%, #e5eee8 100%);
+  color: #15282b;
+}
+
+.dark .rivr-hero {
+  border-color: #395454;
+  background: radial-gradient(circle at 92% 12%, rgb(95 138 139 / 0.24), transparent 34%), linear-gradient(135deg, #1e211c 0%, #15282b 100%);
+  color: #f4efe0;
+}
+
+.rivr-hero img {
+  width: 4.25rem;
+  height: 4.25rem;
+  flex: 0 0 auto;
+  border-radius: 1rem;
+}
+
+.rivr-hero-eyebrow {
+  margin: 0 0 0.25rem;
+  color: #3f6b6c;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.dark .rivr-hero-eyebrow { color: #9fc4bb; }
+
+.rivr-hero-title {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.rivr-field-note {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid #3f6b6c;
+  background: rgb(63 107 108 / 0.08);
+  color: inherit;
+}
+
+.dark .rivr-field-note {
+  border-left-color: #7fa9a1;
+  background: rgb(127 169 161 / 0.1);
+}
