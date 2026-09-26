@@ -163,6 +163,7 @@
                 "root": "rivr/settings",
                 "pages": [
                   "rivr/data-and-privacy",
+                  "rivr/privacy-policy",
                   "rivr/troubleshooting"
                 ]
               }
