@@ -164,6 +164,8 @@
                 "pages": [
                   "rivr/data-and-privacy",
                   "rivr/privacy-policy",
+                  "rivr/terms-of-use",
+                  "rivr/attributions",
                   "rivr/troubleshooting"
                 ]
               }
