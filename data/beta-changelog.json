@@ -2,6 +2,12 @@
   "baseUrl": "https://help.ondeckapps.com",
   "releases": [
     {
+      "version": "1.2.3",
+      "app_version": "1.2.3",
+      "build": "63",
+      "html": "<section>\n  <h2>Relay v1.2.3 Beta</h2>\n  \n  <div class=\"changelog-section\">\n    <h3>New Features</h3>\n    <ul>\n      <li><strong>Universal Variables in Automation:</strong> Variables can now be integrated directly into automation rules and conditions, enabling more dynamic and context-aware workflows.</li>\n      <li><strong>Expanded Variables Catalog:</strong> New variable types and linked computer person variables for richer automation scenarios and enhanced device synchronization.</li>\n      <li><strong>Linked Computer Sharing:</strong> Improved support for sharing and synchronizing variables across linked computers with better pairing and connection management.</li>\n      <li><strong>Live Mode Canvas Settings:</strong> New configurable options for canvas fit and full-screen behavior to customize your Live Mode layouts.</li>\n    </ul>\n  </div>\n  \n  <div class=\"changelog-section\">\n    <h3>Fixes & Improvements</h3>\n    <ul>\n      <li><strong>Sync & Mirror Pairing Reliability:</strong> Fixed trust and connection recovery issues for more stable device pairing and data synchronization.</li>\n    </ul>\n  </div>\n</section>"
+    },
+    {
       "version": "1.2.2",
       "app_version": "1.2.2",
       "build": "62",
