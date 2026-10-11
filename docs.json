@@ -119,6 +119,8 @@
                   "relay/troubleshooting",
                   "relay/account/support",
                   "relay/account/beta-features",
+                  "relay/privacy-policy",
+                  "relay/terms-conditions",
                   "relay/changelog",
                   "relay/beta-changelog"
                 ]
