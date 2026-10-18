@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relay 1.3.0 (build 64) Beta Release Notes</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; padding: 16px; font: -apple-system-body; line-height: 1.45; }
+    h1 { margin: 0 0 12px; font: -apple-system-headline; }
+    h2 { margin: 18px 0 8px; font: -apple-system-subheadline; }
+    ul { margin: 0 0 0 1.25em; padding: 0; }
+    li { margin: 6px 0; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+    a { color: -apple-system-link; }
+    .footer { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Relay 1.3.0 (build 64) Beta</h1>
+  <h1>What's New in Relay 1.3</h1>
+
+<h2>New Features</h2>
+<ul>
+  <li><strong>Relay is going open source.</strong> Relay will be free and open source under the MIT license, with the source code moving to GitHub in Relay 2.0 so the community can help shape what comes next. Relay keeps being developed, and nothing changes for you today.</li>
+  <li><strong>Every Pro feature is unlocked now.</strong> Starting with this update, everything that used to need Relay Pro is unlocked for everyone, including External Devices and External Control. No subscription or license key is needed.</li>
+  <li><strong>One Relay, one update feed.</strong> The beta and release versions are now a single app. Newer, still-being-tested features live behind <em>Settings &gt; Preview</em>. If you were on the beta, turn on <em>Enable preview features</em> there and restart Relay to keep using them.</li>
+  <li><strong>Universal variables in automation.</strong> The expanded variables catalog, including variables shared from linked computers, can now be used throughout automations.</li>
+  <li><strong>Live Mode options.</strong> Canvas fit and full screen in Live Mode are now configurable in Settings.</li>
+  <li><strong>Secure LAN pairing.</strong> Linked computers now establish a private key during pairing with a confirmation code, and requests between paired computers are signed. Settings shows any unsecured pairs and has a switch for older unsigned devices.</li>
+</ul>
+
+<h2>Improvements</h2>
+<ul>
+  <li>Added a Support page in Settings. If Relay helps your team, you can optionally buy me a coffee. It unlocks nothing.</li>
+  <li>Relay no longer checks a license when it starts or when you switch back to the app.</li>
+  <li>Relay Account sign-in (magic link) is no longer needed and will be retired in a future update. If you have signed in, you can delete your account at any time in Settings &gt; Support.</li>
+  <li>Sign-in codes now use a safer exchange, so your session is no longer passed through a link.</li>
+  <li>Usage diagnostics are limited to crashes and reports you choose to send.</li>
+  <li>Terms &amp; Conditions and privacy links now point to the Relay help site, and the privacy manifest lists the data types Relay collects.</li>
+</ul>
+
+<h2>Bug Fixes</h2>
+<ul>
+  <li>Repaired Sync &amp; Mirror pairing trust and connection recovery between linked computers.</li>
+  <li>Hardened Relay's local network features: request size and idle limits, photo access limited to your configured photo folder, and the ProPresenter password kept out of shared bundles and .relay files.</li>
+  <li>Relay only trusts self-signed device certificates on private networks.</li>
+  <li>Spreadsheet roster import is now safer with oversized or malformed files.</li>
+  <li>Added extra verification to the YouTube sign-in flow.</li>
+  <li>Your saved DAW protocol is kept when Preview features are turned off.</li>
+</ul>
+  <p class="footer"><a href="https://help.ondeckapps.com/beta-changelog#version-130">View the full Relay changelog</a></p>
+</body>
+</html>
