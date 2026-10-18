@@ -1,50 +1,55 @@
 ---
-title: Beta Features
-description: Understand the actual beta-only tools, modules, and workflows currently exposed in Relay builds.
-sidebarTitle: Beta Features
+title: "Preview features"
+description: "Turn on Relay's Preview features to try newer tools, triggers, and device support that are still being tested."
+sidebarTitle: "Preview Features"
 icon: "test-tubes"
 ---
 
-## What beta means in Relay today
+## What Preview features are
 
-Beta features are early or evolving parts of Relay that are available for testing before they're considered stable for every user and every production environment. They may change faster than the rest of the app, receive UI or behavior updates between builds, and have rough edges or missing workflows.
+Starting with Relay `1.3.0`, the beta and release versions of Relay are **one app with one update feed**. The newer work that used to ship only in beta builds now lives behind a switch: **Preview features**.
 
-<Warning>Do not assume a beta feature is ready for a mission-critical show just because it appears in the app. Test it in your actual workflow first.</Warning>
+Preview features are early or evolving parts of Relay that are available for testing before they're considered stable for every user and every production environment. They may change faster than the rest of the app and can have rough edges or missing workflows. Preview features are **off by default**.
 
-## Where beta shows up in the app
+<Warning>
+  Do not assume a Preview feature is ready for a mission-critical show just because it appears in the app. Test it in your actual workflow first.
+</Warning>
 
-- the <Icon icon="test-tubes" /> **Beta** page in `Relay > Settings`, shown only in beta or debug builds
-- beta-badged modules in the module catalog
-- beta-badged devices or models in External Devices
-- beta or debug-only wireless diagnostics controls
+## Turn Preview features on or off
 
-## Beta modules in the module picker
+1. Open `Relay > Settings` → <Icon icon="test-tubes" /> **Preview**.
+2. Turn **Enable preview features** on or off.
+3. Quit and reopen Relay. The change takes effect after a restart.
 
-The current module catalog marks these modules as beta:
+<Note>
+  If you were on the beta before Relay `1.3.0`, turn on **Enable preview features** after updating and restart Relay to keep using what you had.
+</Note>
 
-- **[Sennheiser](/relay/integrations/wireless-devices#sennheiser-workflows)** — appears only in beta or debug builds
-- **[YouTube Live Stream Monitor](/relay/integrations/youtube-live)**
-- **[NDI Feed](/relay/integrations/ndi)**
-- **[Shure Overview](/relay/dashboards/modules/wireless#shure-overview-beta)** — the multi-device wireless summary module, shown only in beta or debug builds
+## What Preview features include
 
-Beta automation destinations: [Smart Lights](/relay/integrations/lighting) and [Vista](/relay/integrations/vista).
+- **Newer automation triggers**, such as the ProPresenter State trigger
+- **Smart light control**, with [Smart Lights](/relay/integrations/lighting) and [Vista](/relay/integrations/vista) automation destinations
+- **Extra DAW Transport protocols**, such as Logic Pro, Reaper, and Cubase/Nuendo, beyond the default ones
+- **Newer device models**, including Shure `ANX4`, `ADTD`, and `ADTQ` receivers and certain audio console models
+- **Wireless Diagnostics Logging** controls in the Preview settings page
 
-<Note>The standalone **Shure** module and **Live Transcription** are no longer beta — both are part of the stable release. Only the multi-device **Shure Overview** summary module remains beta-gated.</Note>
+Some modules also carry a **Beta** badge in the module catalog even when Preview features are off. These are working but still being refined: [YouTube Live Stream Monitor](/relay/integrations/youtube-live), [NDI Feed](/relay/integrations/ndi), [Sennheiser](/relay/integrations/wireless-devices#sennheiser-workflows), and [Shure Overview](/relay/dashboards/modules/wireless#shure-overview-beta).
 
-## Beta device and model support
+<Note>
+  The standalone **Shure** module and **Live Transcription** are stable and don't need Preview features.
+</Note>
 
-Some device support is beta-only even when the surrounding feature area is already stable. Per current release notes, Shure `ANX4` and `ADTD` support is still being finished, with `ADTQ` grouped into the same rollout — treat these specific models as beta even though the standalone Shure module itself is stable.
+## What happens if I turn Preview features off
 
-The External Devices area can also show beta badges for Sennheiser wireless devices and certain audio console models marked beta in the device model list.
+Turning Preview features off hides the preview-only tools above. Your saved DAW Transport protocol is kept, so turning Preview back on restores it. Dashboards that already use a preview-only feature keep their saved settings.
 
-## Beta tools in Settings
+## Preview tools in Settings
 
-The `Beta` settings page is only shown in beta or debug builds. It currently includes:
+When Preview features are on, the **Preview** page also shows **Wireless Diagnostics Logging**: verbose logging toggles for Shure and Sennheiser device families, each with a "Reset Defaults" button. Verbose wireless tracing is only active when Preview features are on, after a restart.
 
-- **Wireless Diagnostics Logging** — verbose logging toggles for Shure and Sennheiser device families, each with a "Reset Defaults" button. Verbose tracing is only active in beta and debug builds; release builds always use non-verbose logging regardless of these toggles.
-- **Beta Updates** status — confirms the build always receives beta updates.
-
-<Note>Earlier versions of this page described Sentry-based diagnostics upload and beta-feedback submission controls on this settings page. Those controls are not present in the current build — use `Relay > Settings` → <Icon icon="circle-help" /> **Help** to export logs or copy a diagnostic summary, and email `support@ondeckapps.com` directly for beta feedback.</Note>
+<Note>
+  To export logs or copy a diagnostic summary, use `Relay > Settings` → <Icon icon="circle-help" /> **Help**. For feedback on a Preview feature, email `support@ondeckapps.com`.
+</Note>
 
 ## Text module behavior to test carefully
 
@@ -54,9 +59,9 @@ The text module stores rich formatting inside the attributed content itself, whi
 
 Time triggers poll and fire based on in-memory runtime state, and wireless trigger conditions rely on live device state and cooldown behavior. Trigger firing order is deterministic, but still worth validating in real-world chains, especially when an automation controls consoles, wireless destinations, or other downstream production systems. When testing automation-heavy workflows, validate cooldown timing, repeated-trigger behavior, disconnect edge cases, action ordering, and whether reopening the dashboard changes behavior in subtle ways.
 
-## When to use beta features
+## When to use Preview features
 
-Beta features are a good fit when you want early access to a capability the team is still refining, you can test it ahead of a live event, and you're comfortable giving feedback when something feels unclear.
+Preview features are a good fit when you want early access to a capability the team is still refining, you can test it ahead of a live event, and you're comfortable giving feedback when something feels unclear.
 
 They're a poor fit when the workflow is business-critical and cannot fail, there's no time to test before going live, or the feature sits in the middle of a complex automation or routing chain that would be hard to recover from quickly.
 
@@ -68,18 +73,20 @@ They're a poor fit when the workflow is business-critical and cannot fail, there
 4. Test with the real device, service, or data source it will depend on.
 5. Have a fallback plan before using it in production.
 
-<Tip>The safest way to roll out a beta feature is to isolate it. One beta variable at a time is much easier to evaluate than a whole chain of new behavior.</Tip>
+<Tip>
+  The safest way to roll out a Preview feature is to isolate it. One new variable at a time is much easier to evaluate than a whole chain of new behavior.
+</Tip>
 
 ## Troubleshooting
 
-### A beta feature behaves inconsistently
+### A Preview feature behaves inconsistently
 
-Check whether you're on a beta build, whether the feature depends on another connection, permission, or service, and whether the behavior is repeatable on demand or only occasional.
+Check whether the feature depends on another connection, permission, or service, and whether the behavior is repeatable on demand or only occasional.
 
-### A beta feature is missing entirely
+### A Preview feature is missing entirely
 
-Check whether it's gated to beta or debug builds, gated behind a beta-only device model, or only shown when the required hardware or integration is present — Sennheiser and beta-only Shure models are common examples.
+Check that **Enable preview features** is on under `Relay > Settings` → <Icon icon="test-tubes" /> **Preview** and that you restarted Relay afterward. Some features also only appear when the required hardware or integration is present, such as Shure `ANX4` models or Sennheiser devices.
 
-### I found a beta issue
+### I found an issue
 
 Document what you expected to happen, what actually happened, exact reproduction steps, whether it happens every time or only sometimes, and any screenshots, logs, or diagnostics — then send it to `support@ondeckapps.com`.

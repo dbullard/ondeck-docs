@@ -1,52 +1,51 @@
 ---
-title: "Managing your Relay license, Relay Account, and subscription"
-description: "Activate, refresh, or link your Relay Pro access and understand how Relay Account fits into subscriptions and licenses."
-sidebarTitle: "License"
+title: "Relay is free: no license, subscription, or account needed"
+description: "Every Relay feature is unlocked for everyone starting in Relay 1.3. Learn what changed, what happened to Relay Pro, and how Relay Account sign-in is being retired."
+sidebarTitle: "Free & Support"
 ---
 
-Relay uses a license or subscription to unlock Pro features. In `1.1.0`, Relay also adds a stronger `Relay Account` workflow for restoring entitlements and linking supported purchases across devices.
+Starting with Relay `1.3.0`, **Relay is free and every feature is unlocked for everyone.** There is no license key to enter, no subscription to manage, and no account to sign in to. Everything that used to need Relay Pro, including External Devices, External Control, Synced Tabs, tab schedules, and Automation View, works as soon as you install the update.
 
-## Review your current status
+<Note>
+  Relay is also moving to open source. The source code will be published on GitHub under the MIT license starting with Relay `2.0`. Relay `1.x` stays closed source.
+</Note>
 
-1. Open `Relay > Settings`.
-2. Select <Icon icon="credit-card" /> **Subscription**.
-3. Confirm whether Relay shows Free access, Pro access, or a linked account-backed entitlement.
+## What changed in 1.3
 
-## Common tasks
+- **Relay Pro is unlocked for everyone.** Settings pages and features that used to show as locked are available.
+- **No license checks.** Relay no longer checks a license when it starts or when you switch back to the app, and it works offline.
+- **The Subscription page is now a Support page.** Open `Relay > Settings` → <Icon icon="heart" /> **Support** to see it.
+- **Relay Account sign-in is being retired.** See below.
 
-- Activate a license
-- Refresh license status
-- Manage a subscription
-- Deactivate a license on the current Mac
-- Sign in to Relay Account by email link
-- Refresh account entitlements
-- Link an App Store subscription to Relay Account when prompted
+If a feature still looks locked, make sure you've installed Relay `1.3.0` or later with `Relay > Check for Updates...`.
 
-## Free vs. Pro
+## Supporting Relay
 
-On the Free plan, most of Relay is fully usable — building dashboards, tiles, and most modules doesn't require Pro. Two settings pages are locked until you activate Pro: **External Devices** (audio consoles, wireless receivers) and **External Control** (OSC/MIDI). If a settings page shows as locked, that's why.
+If Relay helps your team, you can optionally support its development from `Relay > Settings` → <Icon icon="heart" /> **Support**. The link opens Buy Me a Coffee. Support is voluntary and **never unlocks anything**.
 
-Each license also has an **activation limit** — the number of Macs it can be active on at once, shown alongside your current activation count in the license popover. If you've moved to a new Mac and licensing won't activate, you may need to deactivate an old device first.
+## If you used to pay for Relay Pro
 
-## Relay Account
+- Your Relay Pro subscription has been cancelled and won't renew, and you don't need to do anything.
+- You can ask for a refund of the unused part of what you paid until the end of November 30, 2026. See the [refund terms](/relay/terms-conditions#refunds) or email `support@ondeckapps.com`.
+- Licenses and subscriptions from earlier versions no longer matter, so you can stop using any license key you saved.
 
-Relay Account can be used to:
+## Relay Account sign-in is being retired
 
-- restore user-scoped entitlements
-- link supported App Store subscriptions
-- keep account-backed licensing clearer across devices
+Relay Account (the email magic-link sign-in) existed to link licenses and subscriptions across devices. Since Relay no longer needs a license, **you don't need a Relay Account**, and magic-link sign-in will be retired in a future update.
 
-If Relay asks you to sign in, it uses an email magic-link flow — enter your email, then follow the link Relay sends you to finish signing in.
-
-### Linking an App Store subscription
-
-If Relay detects a pending App Store purchase that isn't yet linked to a Relay Account, it shows a card with the product and transaction details and a prompt to connect an email. Enter your email, wait for the sign-in link (you can request another after a short cooldown if it doesn't arrive), and follow it to finish linking — the purchase then shows as connected to that email going forward.
+- You can use every part of Relay without ever signing in.
+- If you already signed in, nothing breaks. Your dashboards and settings are stored on your Mac, not in your account.
+- You can delete your Relay Account any time in `Relay > Settings` → <Icon icon="heart" /> **Support**. Deleting it removes your account data from our servers.
+- If you're signed in and have diagnostics sharing on, Relay can send an optional heartbeat. See [Permissions](/relay/account/permissions#usage-diagnostics-and-the-relay-account-heartbeat).
 
 ## Troubleshooting
 
-If Pro features remain locked:
+### A feature still looks locked
 
-- Confirm the Mac is online.
-- Refresh the current license status.
-- If you use Relay Account, refresh entitlements there too.
-- If you purchased through the App Store, finish any pending account-link step shown in Settings.
+1. Quit and reopen Relay.
+2. Choose `Relay > Check for Updates...` and install the latest version.
+3. If it's still locked on `1.3.0` or later, contact `support@ondeckapps.com` with your app version.
+
+### Do I need to sign in?
+
+No. Relay works without an account. If you'd rather remove an account you already created, delete it from `Relay > Settings` → <Icon icon="heart" /> **Support**.
