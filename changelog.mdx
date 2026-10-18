@@ -1,0 +1,406 @@
+---
+title: "Relay changelog"
+description: "User-facing release notes for Relay."
+sidebarTitle: "Changelog"
+---
+
+Relay release notes are organized by version. Sparkle update feeds can link to each version directly using the per-version anchors on this page.
+
+## Version 1.3.0 <a id="version-130"></a>
+
+## What's New in Relay 1.3
+
+### New Features
+
+- **Relay is going open source.** Relay will be free and open source under the MIT license, with the source code moving to GitHub in Relay 2.0 so the community can help shape what comes next. Relay keeps being developed, and nothing changes for you today.
+- **Every Pro feature is unlocked now.** Starting with this update, everything that used to need Relay Pro is unlocked for everyone, including External Devices and External Control. No subscription or license key is needed.
+- **One Relay, one update feed.** The beta and release versions are now a single app. Newer, still-being-tested features live behind Settings > Preview. If you were on the beta, turn on Enable preview features there and restart Relay to keep using them.
+- **Universal variables in automation.** The expanded variables catalog, including variables shared from linked computers, can now be used throughout automations.
+- **Live Mode options.** Canvas fit and full screen in Live Mode are now configurable in Settings.
+- **Secure LAN pairing.** Linked computers now establish a private key during pairing with a confirmation code, and requests between paired computers are signed. Settings shows any unsecured pairs and has a switch for older unsigned devices.
+
+### Improvements
+
+- Added a Support page in Settings. If Relay helps your team, you can optionally buy me a coffee. It unlocks nothing.
+- Relay no longer checks a license when it starts or when you switch back to the app.
+- Relay Account sign-in (magic link) is no longer needed and will be retired in a future update. If you have signed in, you can delete your account at any time in Settings > Support.
+- Sign-in codes now use a safer exchange, so your session is no longer passed through a link.
+- Usage diagnostics are limited to crashes and reports you choose to send.
+- Terms & Conditions and privacy links now point to the Relay help site, and the privacy manifest lists the data types Relay collects.
+
+### Bug Fixes
+
+- Repaired Sync & Mirror pairing trust and connection recovery between linked computers.
+- Hardened Relay's local network features: request size and idle limits, photo access limited to your configured photo folder, and the ProPresenter password kept out of shared bundles and .relay files.
+- Relay only trusts self-signed device certificates on private networks.
+- Spreadsheet roster import is now safer with oversized or malformed files.
+- Added extra verification to the YouTube sign-in flow.
+- Your saved DAW protocol is kept when Preview features are turned off.
+
+## Version 1.2.2 <a id="version-122"></a>
+
+A quick confession: the last release was 1.2, which makes this one 1.2.1. Somebody (me) fat-fingered the version number and typed 1.2.2. There is no 1.2.1, and we're committing to the bit. Think of it as a bonus patch you never had to install.
+
+#### New
+
+- **Setup Wizard** — A guided first-run wizard finds your devices, connects your services, suggests starter tiles, and builds your first dashboard with a live layout preview. Free and Pro users get their own step sequences. You can reopen it anytime from the File menu on Mac or the ellipsis menu on iOS (Coming Soon).
+- **Shared Values & Variables** — A new Variables window lets you define values once and use them across text inputs and automations. Wireless telemetry variables are suggested automatically in live mode and labeled with your saved channel names.
+- **Sennheiser Spectera monitoring** — Monitor Spectera systems with live state updates, pinned certificate trust, authenticated connection tests, and diagnostics logging. Newer mobile device schemas now decode correctly.
+- **Shure wireless overhaul** — A new 10-segment mic meter with a -60 dBFS floor gives finer readings on quiet signals. More accurate RF and battery readings for AD4Q, Axient, and QLX-D. Stuck connections now reconnect on their own, Overview polling no longer starves channels or misses presence updates, and ANX4 now defaults to TCP.
+- **Option-drag tile snapping** — Hold Option while dragging a tile to snap it into a region of the canvas, with a live preview of where it will land.
+- **OSC automation** — Improved OSC sending and automation, plus better device discovery during onboarding.
+- **Close Home** — A new button dismisses the launch screen and returns you to your dashboard.
+
+#### Improvements & Fixes
+
+- **Relay Mobile (Coming Soon)** — Fixes for iPad exporting, Planning Center sign-in cancellation, and upgrade prompts on locked modules. The Settings inspector now closes properly, and copy is now written for each platform.
+- **Transcription profanity filter** — The filter now catches inflected words and already-censored text, and its settings persist between sessions.
+- **ProPresenter** — Slide numbers now come from ProPresenter's slide index, and disabled slides are counted correctly in group ranges.
+- **Planning Center** — Position assignment candidates now stay in sync with live data.
+- **Discovery & stability** — Fixed data races and socket handling in device discovery scans, and made sure scan completions aren't dropped mid-cancel.
+- **What's New** — Entries are now shown only for the version you have installed.
+
+## Version 1.2 <a id="version-12"></a>
+
+## What's New in Relay 1.2
+
+### New Features
+
+- **Synced Tabs (Pro):** Share one live, editable canvas across every Mac and iPad (Coming Soon) running Relay on your network — no cloud required. One device hosts a tab, others join it from a "Sync" pill in the toolbar, and layout or content changes push to everyone automatically. Device-specific connections (ProPresenter, Resolume, Shure/Sennheiser, NDI, DAW/MIDI, audio inputs) always stay local to each machine, even on a synced tab. If a host goes offline, joined devices get a clear prompt to reconnect, keep their own local copy, or remove the tab.
+- **Universal Automation:** Automation graphs are no longer locked to a single tab. Promote any graph to Universal and it runs across every tab that needs it, with a new mode picker and scope controls right in the toolbar.
+- **Standard Console Actions:** Automation can now directly trigger scene recall, mute, level, and pan on Behringer X32/M32, Yamaha DM7/Rivage, and Allen & Heath consoles — no third-party bridge required.
+- **Tile Distribute Tools:** Select multiple tiles and instantly arrange them with new distribute and grid-distribute controls, including one-click fill-window layouts. Buttons now show a live preview of the resulting grid instead of a generic icon.
+
+### Improvements
+
+- Dashboard tiles can now be sized down to 44&times;44pt (previously 160&times;120pt), so compact button layouts fit much more densely.
+- Canvas panning and zooming is noticeably smoother on dashboards with lots of tiles, and trackpad pan/zoom no longer gets swallowed by scrollable content inside a module.
+- Word Trigger automation nodes now support per-rule output ports, so each matched phrase can route to its own downstream action.
+- Redesigned button icon picker: a searchable popover across roughly 340 SF Symbols, replacing the old preset grid and free-text entry.
+- A new in-app "What's New" screen shows your update history, with an automatic popup after Relay updates itself.
+- Added a proper Quit button to the home screen sidebar; Quit and Close now respond immediately even while a dialog is open.
+- Settings polish: Save/Cancel controls on the General tab, alphabetized device lists, and numeric fields no longer flicker while you type.
+- RTA and Spectrograph tiles now show a clear "No audio input available" state instead of a blank tile when nothing is selected.
+- New opt-in consent screen for diagnostics and crash reporting during onboarding.
+- Roster CSV/Excel import is now built directly into the Rosters Manager.
+
+### Bug Fixes
+
+- Fixed Shure wireless connections not recovering automatically after a network drop. Relay now detects a lost connection immediately, shows "Reconnecting" instead of "Offline," and retries on its own — previously this required toggling Live Mode off and on twice.
+- Fixed Live Mode unexpectedly exiting when tapping two different interactive tiles in quick succession.
+- Fixed dashboard resize handles that would stop responding, show the wrong cursor, or silently fall through to a move-drag instead of a resize.
+- Fixed multi-tile group resizing occasionally snapping a follower tile to the wrong height on release.
+- Fixed dashboard edits being silently dropped when made immediately after reordering or removing a tab.
+- Fixed a crash and hang when upgrading to Relay Pro from the home screen.
+- Fixed a reappeared horizontal scrollbar under the tab strip and other horizontal lists.
+- Fixed a crash when switching tabs while an automation graph was open.
+- Fixed "Auto" transport mode for Shure ANX4/ADTD/ADTQ receivers not actually detecting the best connection type.
+- Fixed Overview polling generating extra network traffic that could destabilize some receivers' connections.
+
+## Version 1.1.4 <a id="version-114"></a>
+
+#### Relay 1.1.4 (Beta)
+
+New
+
+- **Synced Tabs.** A whole new way to share your work across devices — pick a tab and keep it live-synced with your other Macs and iPads (Coming Soon) on the same network. Edit it anywhere and everyone sees the change instantly. This is different from Mirroring, which only lets you view another device's screen; Synced Tabs are fully editable and stay in step automatically, even if a device drops offline and reconnects later.
+- **Reworked Button module.** Fit more buttons per module, plus a wider set of new icons to choose from.
+- **Approve devices before they connect.** When another device wants to sync or mirror with you, you'll now get a clear approval prompt — nothing connects without your say-so. You can also forget a device later if you no longer want it connected.
+
+Improved
+
+- Sync and Mirror settings are now organized into one clean page, so it's easier to see which devices are connected and reconnect with a single click.
+- Shure wireless devices run lighter on your Mac, especially during longer shows with lots of channels active.
+- Still working on full ANX4 and ADTD support — more to come in an upcoming beta.
+
+Fixed
+
+- Button icons and sizing changes now apply instantly and stick, even when you're adjusting things quickly.
+- Fixed duplicate results showing up when searching for icons.
+- Devices on your network are now found reliably, and reconnect faster when a synced tab's host comes back online.
+- Toolbar labels for Sync and Mirror no longer get cut off on Mac.
+- What's New won't pop back up after you've already seen it.
+- Selecting a mirrored tab now properly starts the pairing process instead of getting stuck.
+
+## Version 1.1.3 <a id="version-113"></a>
+
+## What's New in Relay
+
+### New Features
+
+- **Real-Time Analyzer (RTA):** View frequency bands of your audio inputs in real-time with new bar and filled-curve display modes and peak-hold capabilities.
+- **Spectrograph:** A new scrolling waterfall view for visualizing audio frequency distributions over time.
+- **Global Audio Settings:** Manage all your audio inputs, transcription configurations, and per-input SPL calibration centrally.
+- **Advanced Transcription Controls:** Fine-tune auto-gain sensitivity, apply word substitutions, and enable profanity masking on a per-input basis.
+- **SPL Input Logging:** Record SPL data for specific inputs directly to CSV files, complete with a pulsing green indicator on your tiles when recording is active.
+
+### Improvements
+
+- **Shure Overview Hub:** A new centralized polling system for Shure wireless devices featuring dynamic METER_RATE tiers for greater efficiency.
+- Upgraded dashboard tile resizing with smart guides, a floating size HUD, and a consolidated resize layout for smoother editing.
+- Audio level calculations now use proper LAeq energy averaging for significantly greater accuracy.
+- Optimized performance by skipping redundant polling for METER_RATE-capable Shure wireless microphones.
+- Settings changes for audio inputs now take effect immediately without requiring restarts.
+- Existing module-specific transcription settings now automatically migrate to the new global system on launch.
+
+### Bug Fixes
+
+- Fixed a crash related to the FFT calculations when selecting an input for the RTA or Spectrograph.
+- Corrected C-A audio level calculations and removed the double application of calibration offsets in the dB reader.
+- Fixed an issue where SPL Level logging could silently fail when saving to protected folders like Desktop, Documents, or Downloads. Relay will now correctly show an error banner requesting folder permissions.
+- Reduced unnecessary error reporting and diagnostics from Shure wireless connections.
+
+## Version 1.1.2 <a id="version-112"></a>
+
+### What's New
+
+10 New Automation Nodes
+
+The automation graph gets a big expansion. New nodes you can drop onto the canvas:
+
+- **HTTP Request** — trigger any web endpoint or API from an automation
+- **Set Variable** — store and reuse values across your automation flow
+- **App State Trigger** — fire automations on app launch, live mode toggle, or tab switch
+- **PCO Plan Updated** — trigger when your Planning Center plan changes, with a live item picker to filter exactly what you care about
+- **Toggle** — flip a value on/off each time it's triggered
+- **Counter** — increment or reset a count
+- **Sequence** — step through a list of outputs one at a time
+- **Latch/Gate** — hold a signal open until explicitly released
+- **Merge** — combine multiple signals into one
+- **Current Time** — use the current time as a value in your flow
+
+Console Node Improvements
+
+- You can now add **multiple graph nodes for the same console**, useful when you need to send different trigger actions to the same device from different parts of your graph
+- **Trigger bindings** have moved from the trigger node to the console node, making it much clearer which console handles which trigger action
+- Console nodes now show a **capability mismatch warning** if you connect a source that the console doesn't support
+
+Live Mode Button
+
+- The live mode button is now its own standalone control in the toolbar, no longer grouped with other buttons
+
+Network Pairs Indicator
+
+- The connected network pairs pill has moved into the System Status overlay, keeping it alongside CPU, memory, OSC, and MIDI activity where it belongs
+
+---
+
+### Fixes & Improvements
+
+- **PCO Auto-Advance** redesigned as a weekly checkpoint coordinator for more reliable and predictable behavior
+- **ProPresenter** quick-add devices directly from discovered devices on your network; settings UI polished throughout
+- All 10 new automation nodes support duplicate and remove actions
+- Latch/Gate, Toggle, and Sequence node UI polished
+- Console nodes now correctly name and distinguish between trigger nodes in the binding picker
+- Console node state is properly cleaned up on deletion and correctly copied on duplication
+- Node collapse state now persists when switching between automation modes
+- Significant automation graph performance improvements — cache rebuilds now happen off the main thread, reducing UI stutter when opening large dashboards
+- Various automation node stability fixes
+
+## Version 1.1.1 <a id="version-111"></a>
+
+### New
+
+- **Home Screen & Launch Experience**
+  - New home screen with a sidebar, recent files grid, and canvas size picker when creating a new dashboard.
+  - Startup file: right-click any file to pin it as always-open on launch. This bypasses the home screen and save dialog automatically, and pinned files show a blue pin badge in the grid.
+- **Auto-Save**
+  - Saving/Saved status indicator in the toolbar.
+  - Auto-save is now enabled by default for files with a known save location.
+  - First-time auto-save users see a one-time modal with an inline toggle to disable it.
+- **Canvas Size Per Tab**
+  - Set a per-tab canvas size via right-click on the tab. A badge appears in the toolbar when an override is active.
+  - Canvas size now travels with the document, so tiles no longer auto-scale unexpectedly on file open.
+- **DiGiCo Integration**
+  - DiGiCo OSC sync lets you sync channel names directly from the console with one tap.
+  - DiGiCo trigger actions are now available in the automation graph to recall macros and send OSC commands.
+  - Added nested variable sub-menus, name-based channel pickers for all channel types, and a Brand/Model split in console settings.
+
+### Improved
+
+- Automation graph node deletion now supports Undo.
+- The floating Delete button now works in graph mode.
+- Help messages when a node can't be added now include a clear title and explanation.
+- The Shure module now respects the global live mode toggle and shows a "Live data paused" banner with placeholder values when live mode is off.
+- Thumbnails now live in `~/Library/Caches/Relay/thumbnails/` to keep project folders tidy.
+- System CPU usage reading is now significantly more accurate.
+
+### Fixed
+
+- Fixed spurious unsaved-changes dialogs when opening files into a blank document or on launch with a startup file.
+- Fixed the new dashboard sheet so it correctly applies the selected canvas size.
+- Fixed various DiGiCo channel token, icon, and layout issues.
+
+## Version 1.1.0 <a id="version-110"></a>
+
+## A BIG UPDATE
+
+### New
+
+- Added new NDI support with video monitoring capabilities for Relay dashboards.
+- Added a new Shure Summary module for simplified monitoring of wireless microphones and IEM systems.
+- Added a new DAW Transport module for monitoring and controlling supported DAW transport workflows.
+- Added a dedicated Roster Team Assignments module to use with new Roster types
+- New Planning Center Team Assignment module that will allow for more formatting of teams and assignments in addtion to assigning stored mics, IEMs, and equipment from the new Equipment Roster type.
+- Added new Variable node in Automation view so you can store custom variables or inbound OSC strings as reference-able text via the new variable input button in the Text Module.
+- Added new Vista 3 Node in Automation view to convert Planning Center rundowns as cuelists via importable .csv files in Vista software.
+- Added new if/then logic node so you can control the flow of your automations.
+- Continued development work toward future iPad support.
+
+### Improved
+
+- Improved Relay account handling, licensing, entitlement refresh, and App Store synchronization. Link your subscription to Relay via your purchase email and use that to license instead of memorizing license keys.
+- Improved dedicated Roster editing view accessible from the toolbar. 3 new Roster types that will allow you to use your rosters across all tabs.
+- Improved dashboard editing, canvas behavior, tile resizing, and Live Mode performance.
+- Improved Automation View performance and handling for larger graphs and complex workflows.
+- Improved Planning Center assignments with richer wireless device mapping and roster workflows.
+- Improved Shure wireless monitoring with enhanced RF, battery, mute, audio, and transmitter reporting.
+- Improved NDI performance, reconnect behavior, diagnostics, settings, and video pipeline efficiency.
+- Reworked External Controls with a combined MIDI and OSC monitor view, live activity tracking, and setup guidance.
+- Expanded diagnostics with additional performance, dashboard, automation, and runtime information.
+
+### Fixed
+
+- Fixed multiple Planning Center stability, refresh, and authentication issues.
+- Fixed dashboard rendering, graph behavior, and Live Mode performance issues.
+- Fixed automation view rendering and efficiency issues.
+- Fixed several crash paths and improved overall application stability.
+- Improved security handling across integrations and credential storage.
+
+## Version 1.0.7 <a id="version-107"></a>
+
+### New
+
+- **Planning Center module updates**
+  - Added more rundown columns, including song and item details and notes sections.
+  - Added a new Team Assignments UI to make it easier to sort teams and see who is scheduled for each position, service time, and status.
+- **Tab schedules**
+  - Added tab schedules so tabs can automatically switch based on date and time.
+  - Useful for teams with multiple events or services on the same day.
+  - Open `Tab Settings > Schedule` to set schedule rules.
+
+### Fixed
+
+- Fixed bugs that could select modules and nodes while working in different views, causing unwanted editing or deletion.
+- Fixed Text module issues.
+- Improved data fetching performance.
+- Fixed UI issues.
+
+### Notes
+
+- Tab schedules are a Relay Pro feature because the free version supports one tab.
+
+## Version 1.0.6 <a id="version-106"></a>
+
+### New
+
+- **Tab schedules**
+  - Added tab schedules so tabs can automatically switch based on date and time.
+  - Useful for teams with multiple events or services on the same day.
+  - Open `Tab Settings > Schedule` to set schedule rules.
+- **Keyboard shortcuts**
+  - Added quick keys to navigate tabs more easily.
+  - Added a new option in the Help menu to see all keyboard shortcuts available in Relay.
+
+### Fixed
+
+- Fixed a bug where dashboards with many Shure modules could freeze or crash after running for a while in Live Mode.
+- Added a possible fix for a Text module bug that caused random characters and line breaks.
+- Fixed UI issues.
+
+## Version 1.0.5 <a id="version-105"></a>
+
+### New
+
+- Added the ability to use cached console and wireless channel names as sources for Automation nodes.
+- Expanded in-app commands for the Button module and in-app action nodes.
+- **LAN Sharing update**
+  - Added a view-only web view of your active tab so non-Relay devices can view it in a browser using the URL from LAN Sharing settings.
+  - Useful for viewing Relay on mobile and other non-Mac devices.
+  - Added LAN peer-to-peer notifications for peers and HTTP web view devices.
+
+### Fixed
+
+- Tightened how Relay saves and recalls dashboards, with a new autosave option in General settings.
+- Fixed a Person module bug where a position could not be assigned if more than one person was assigned to that position.
+- Fixed a bug where the Shure module did not show the channel name in edit mode.
+- Improved External Device scanning reliability.
+
+### Notes
+
+- The LAN Sharing browser view is included in the free version. LAN imports remain a Relay Pro feature.
+- The LAN Sharing browser view is still in progress, so there may be bugs to fix.
+- One instance of Relay must be running on a Mac for the LAN Sharing browser view to work.
+
+## Version 1.0.4 <a id="version-104"></a>
+
+### New
+
+- **Image module**
+  - Added the Image module so you can load a custom logo or image into a tile.
+- **LAN Sharing update**
+  - Added a view-only web view of your active tab so non-Relay devices can view it in a browser using the URL from LAN Sharing settings.
+  - Useful for viewing Relay on mobile and other non-Mac devices.
+
+### Fixed
+
+- Added ProPresenter slide notes as a display option.
+- Fixed ProPresenter connection hang errors.
+- Fixed Countdown and Timer modules not starting in Live Mode, and added new toggles for auto-starting in Live Mode.
+- Optimized connections to Shure devices.
+- Fixed system Light Mode UI elements that were not legible or visible.
+
+### Notes
+
+- The LAN Sharing browser view is included in the free version. LAN imports remain a Relay Pro feature.
+- The LAN Sharing browser view is still in progress, so there may be bugs to fix.
+- One instance of Relay must be running on a Mac for the LAN Sharing browser view to work.
+
+## Version 1.0.3 <a id="version-103"></a>
+
+### New
+
+- **Live Transcription module**
+  - Added support for up to four concurrent transcriptions per tab, either in the same tile or across separate tiles.
+
+### Fixed
+
+- Fixed the OSC Send node so custom ports pass data correctly.
+- Fixed the Word Trigger node so it can send more than one command per Live Mode session.
+- Added new bug and error reporting so the team can review more crash and hang data.
+
+## Version 1.0.2 <a id="version-102"></a>
+
+### Fixed
+
+- Fixed issues with Shure TCP connections.
+- Fixed a ProPresenter module bug where entering Live Mode caused data to stop updating.
+- Improved the UI.
+
+### Known Issues
+
+- Shure ANX4 and ADTD/Q devices still are not connecting correctly.
+
+## Version 1.0.1 <a id="version-101"></a>
+
+### New
+
+- **Rosters**
+  - Added Rosters as an alternative for teams without Planning Center.
+  - Rosters is included in the free version, with no paid subscription required.
+  - Rosters is a local database that lets you create lists to call back to and assign through the Picker module.
+  - Rosters settings are available in the new Tab Settings area, where the old Planning Center toolbar button was located.
+- **Documents module**
+  - Added the Documents module for preview-only views of PDF or Word documents, useful for rundowns or stage plots without opening separate apps.
+
+### Fixed
+
+- Fixed the export logs action with more detailed logs.
+- Fixed app signing issues that were likely causing in-app updates to fail.
+- Improved the UI.
+
+## Version 1.0 <a id="version-10"></a>
+
+### Notes
+
+- Initial release.
