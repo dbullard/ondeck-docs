@@ -44,7 +44,7 @@ Sennheiser support covers three device families, each communicating over a diffe
 
 Relay auto-selects the default port for the chosen model; override it only if your network requires a different one.
 
-<Note>Sennheiser is a beta-only integration — see below.</Note>
+<Note>Sennheiser is still marked beta. Test it before you rely on it in a live show.</Note>
 
 ### Spectera monitoring
 
@@ -57,13 +57,13 @@ Relay 1.2.2 adds monitoring for Sennheiser Spectera systems:
 
 Newer mobile device schemas now decode correctly.
 
-## Beta and debug-only wireless areas
+## Beta and Preview wireless areas
 
-Some wireless features are beta-sensitive:
+Some wireless features are still being refined:
 
-- Sennheiser module availability in beta or debug builds
-- beta-only Shure models such as `ANX4`, `ADTD`, and `ADTQ`
-- verbose wireless diagnostics controls in the Beta settings page
+- The Sennheiser module is marked beta
+- The Shure Overview module and Shure models such as `ANX4`, `ADTD`, and `ADTQ` need [Preview features](/relay/account/beta-features) turned on
+- Verbose wireless diagnostics controls are on the Preview settings page
 
 ## Automation tie-ins
 
@@ -73,4 +73,4 @@ Wireless systems can feed trigger conditions and destination commands in Automat
 
 Device discovery scans were made more stable in 1.2.2, including fixes for data races and for scan completions dropped during cancellation.
 
-If wireless data is missing, confirm the device is added, reachable, selected in the module, and available in the current build type.
+If wireless data is missing, confirm the device is added, reachable, and selected in the module, and that Preview features are on if it's a preview-only model or module.

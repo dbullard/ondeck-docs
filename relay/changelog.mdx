@@ -6,6 +6,39 @@ sidebarTitle: "Changelog"
 
 Relay release notes are organized by version. Sparkle update feeds can link to each version directly using the per-version anchors on this page.
 
+<Note>
+  Starting with Relay 1.3.0, Relay is free with every feature unlocked, and the beta and release versions are one app. Entries for earlier versions mention Relay Pro and the beta channel as they were at the time.
+</Note>
+
+## Version 1.3.0 <a id="version-130" />
+
+#### New Features
+
+- **Relay is going open source.** Relay will be free and open source under the MIT license, with the source code moving to GitHub in Relay 2.0 so the community can help shape what comes next. Relay keeps being developed, and nothing changes for you today.
+- **Every Pro feature is unlocked now.** Starting with this update, everything that used to need Relay Pro is unlocked for everyone, including External Devices and External Control. No subscription or license key is needed. See [Free & Support](/relay/account/license).
+- **One Relay, one update feed.** The beta and release versions are now a single app. Newer, still-being-tested features live behind **Settings > Preview**. If you were on the beta, turn on **Enable preview features** there and restart Relay to keep using them. See [Preview features](/relay/account/beta-features).
+- **Universal variables in automation.** The expanded variables catalog, including variables shared from linked computers, can now be used throughout automations.
+- **Live Mode options.** Canvas fit and full screen in Live Mode are now configurable in Settings.
+- **Secure LAN pairing.** Linked computers now establish a private key during pairing with a confirmation code, and requests between paired computers are signed. Settings shows any unsecured pairs and has a switch for older unsigned devices.
+
+#### Improvements
+
+- Added a Support page in Settings. If Relay helps your team, you can optionally buy me a coffee. It unlocks nothing.
+- Relay no longer checks a license when it starts or when you switch back to the app.
+- Relay Account sign-in (magic link) is no longer needed and will be retired in a future update. If you have signed in, you can delete your account at any time in Settings > Support.
+- Sign-in codes now use a safer exchange, so your session is no longer passed through a link.
+- Usage diagnostics are limited to crashes and reports you choose to send.
+- Terms & Conditions and privacy links now point to the Relay help site, and the privacy manifest lists the data types Relay collects.
+
+#### Bug Fixes
+
+- Repaired Sync & Mirror pairing trust and connection recovery between linked computers.
+- Hardened Relay's local network features: request size and idle limits, photo access limited to your configured photo folder, and the ProPresenter password kept out of shared bundles and .relay files.
+- Relay only trusts self-signed device certificates on private networks.
+- Spreadsheet roster import is now safer with oversized or malformed files.
+- Added extra verification to the YouTube sign-in flow.
+- Your saved DAW protocol is kept when Preview features are turned off.
+
 ## Version 1.2.2 <a id="version-122"></a>
 
 A quick confession: the last release was 1.2, which makes this one 1.2.1. Somebody (me) fat-fingered the version number and typed 1.2.2. There is no 1.2.1, and we're committing to the bit. Think of it as a bonus patch you never had to install.
