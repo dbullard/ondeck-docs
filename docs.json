@@ -209,168 +209,332 @@
   },
   "redirects": [
     {
+      "source": "/relay/account/beta-features",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/app/preview-features.md"
+    },
+    {
+      "source": "/relay/account/license",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/README.md"
+    },
+    {
+      "source": "/relay/account/permissions",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/app/permissions.md"
+    },
+    {
+      "source": "/relay/account/support",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/app/support.md"
+    },
+    {
+      "source": "/relay/account/updates",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/app/updates.md"
+    },
+    {
+      "source": "/relay/beta-changelog",
+      "destination": "https://github.com/dbullard/Relay/releases"
+    },
+    {
+      "source": "/relay/changelog",
+      "destination": "https://github.com/dbullard/Relay/releases"
+    },
+    {
+      "source": "/relay/core-concepts",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/core-concepts.md"
+    },
+    {
+      "source": "/relay/dashboards/automation",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/automation.md"
+    },
+    {
+      "source": "/relay/dashboards/live-mode",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/live-mode.md"
+    },
+    {
+      "source": "/relay/dashboards/modules",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules.md"
+    },
+    {
+      "source": "/relay/dashboards/modules/audio-visual",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/audio-visual.md"
+    },
+    {
+      "source": "/relay/dashboards/modules/people-planning",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/people-planning.md"
+    },
+    {
+      "source": "/relay/dashboards/modules/utility",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/utility.md"
+    },
+    {
+      "source": "/relay/dashboards/modules/video-presentation",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/video-presentation.md"
+    },
+    {
+      "source": "/relay/dashboards/modules/wireless",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/wireless.md"
+    },
+    {
+      "source": "/relay/dashboards/nodes/actions",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/nodes/actions.md"
+    },
+    {
+      "source": "/relay/dashboards/nodes/sources",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/nodes/sources.md"
+    },
+    {
+      "source": "/relay/dashboards/nodes/triggers",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/nodes/triggers.md"
+    },
+    {
+      "source": "/relay/dashboards/nodes/utilities",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/nodes/utilities.md"
+    },
+    {
+      "source": "/relay/dashboards/overview",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/overview.md"
+    },
+    {
+      "source": "/relay/dashboards/tiles",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/tiles.md"
+    },
+    {
+      "source": "/relay/dashboards/variables",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/variables.md"
+    },
+    {
+      "source": "/relay/guides/setup-wizard",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/guides/setup-wizard.md"
+    },
+    {
+      "source": "/relay",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/README.md"
+    },
+    {
+      "source": "/relay/integrations/audio-consoles",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/audio-consoles.md"
+    },
+    {
+      "source": "/relay/integrations/lighting",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/lighting.md"
+    },
+    {
+      "source": "/relay/integrations/ndi",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/ndi.md"
+    },
+    {
+      "source": "/relay/integrations/overview",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/overview.md"
+    },
+    {
+      "source": "/relay/integrations/planning-center",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/planning-center.md"
+    },
+    {
+      "source": "/relay/integrations/propresenter",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/propresenter.md"
+    },
+    {
+      "source": "/relay/integrations/vista",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/vista.md"
+    },
+    {
+      "source": "/relay/integrations/wireless-devices",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/wireless-devices.md"
+    },
+    {
+      "source": "/relay/integrations/youtube-live",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/youtube-live.md"
+    },
+    {
+      "source": "/relay/introduction",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/introduction.md"
+    },
+    {
+      "source": "/relay/protocols/lan-sharing",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/protocols/lan-sharing.md"
+    },
+    {
+      "source": "/relay/protocols/midi",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/protocols/midi.md"
+    },
+    {
+      "source": "/relay/protocols/osc",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/protocols/osc.md"
+    },
+    {
+      "source": "/relay/protocols/overview",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/protocols/overview.md"
+    },
+    {
+      "source": "/relay/quickstart",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/quickstart.md"
+    },
+    {
+      "source": "/relay/troubleshooting",
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/troubleshooting.md"
+    },
+    {
       "source": "/guides/first-dashboard",
-      "destination": "/relay/quickstart"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/quickstart.md"
     },
     {
       "source": "/account/beta-features",
-      "destination": "/relay/account/beta-features"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/app/preview-features.md"
     },
     {
       "source": "/account/license",
-      "destination": "/relay/account/license"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/README.md"
     },
     {
       "source": "/account/permissions",
-      "destination": "/relay/account/permissions"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/app/permissions.md"
     },
     {
       "source": "/account/support",
-      "destination": "/relay/account/support"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/app/support.md"
     },
     {
       "source": "/account/updates",
-      "destination": "/relay/account/updates"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/app/updates.md"
     },
     {
       "source": "/beta-changelog",
-      "destination": "/relay/beta-changelog"
+      "destination": "https://github.com/dbullard/Relay/releases"
     },
     {
       "source": "/changelog",
-      "destination": "/relay/changelog"
+      "destination": "https://github.com/dbullard/Relay/releases"
     },
     {
       "source": "/core-concepts",
-      "destination": "/relay/core-concepts"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/core-concepts.md"
     },
     {
       "source": "/dashboards/automation",
-      "destination": "/relay/dashboards/automation"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/automation.md"
     },
     {
       "source": "/dashboards/live-mode",
-      "destination": "/relay/dashboards/live-mode"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/live-mode.md"
     },
     {
       "source": "/dashboards/modules/audio-visual",
-      "destination": "/relay/dashboards/modules/audio-visual"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/audio-visual.md"
     },
     {
       "source": "/dashboards/modules/people-planning",
-      "destination": "/relay/dashboards/modules/people-planning"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/people-planning.md"
     },
     {
       "source": "/dashboards/modules/utility",
-      "destination": "/relay/dashboards/modules/utility"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/utility.md"
     },
     {
       "source": "/dashboards/modules/video-presentation",
-      "destination": "/relay/dashboards/modules/video-presentation"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/video-presentation.md"
     },
     {
       "source": "/dashboards/modules/wireless",
-      "destination": "/relay/dashboards/modules/wireless"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules/wireless.md"
     },
     {
       "source": "/dashboards/modules",
-      "destination": "/relay/dashboards/modules"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/modules.md"
     },
     {
       "source": "/dashboards/nodes/actions",
-      "destination": "/relay/dashboards/nodes/actions"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/nodes/actions.md"
     },
     {
       "source": "/dashboards/nodes/sources",
-      "destination": "/relay/dashboards/nodes/sources"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/nodes/sources.md"
     },
     {
       "source": "/dashboards/nodes/triggers",
-      "destination": "/relay/dashboards/nodes/triggers"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/nodes/triggers.md"
     },
     {
       "source": "/dashboards/nodes/utilities",
-      "destination": "/relay/dashboards/nodes/utilities"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/nodes/utilities.md"
     },
     {
       "source": "/dashboards/overview",
-      "destination": "/relay/dashboards/overview"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/overview.md"
     },
     {
       "source": "/dashboards/tiles",
-      "destination": "/relay/dashboards/tiles"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/tiles.md"
     },
     {
       "source": "/dashboards/variables",
-      "destination": "/relay/dashboards/variables"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/dashboards/variables.md"
     },
     {
       "source": "/guides/setup-wizard",
-      "destination": "/relay/guides/setup-wizard"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/guides/setup-wizard.md"
     },
     {
       "source": "/integrations/audio-consoles",
-      "destination": "/relay/integrations/audio-consoles"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/audio-consoles.md"
     },
     {
       "source": "/integrations/lighting",
-      "destination": "/relay/integrations/lighting"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/lighting.md"
     },
     {
       "source": "/integrations/ndi",
-      "destination": "/relay/integrations/ndi"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/ndi.md"
     },
     {
       "source": "/integrations/overview",
-      "destination": "/relay/integrations/overview"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/overview.md"
     },
     {
       "source": "/integrations/planning-center",
-      "destination": "/relay/integrations/planning-center"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/planning-center.md"
     },
     {
       "source": "/integrations/propresenter",
-      "destination": "/relay/integrations/propresenter"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/propresenter.md"
     },
     {
       "source": "/integrations/vista",
-      "destination": "/relay/integrations/vista"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/vista.md"
     },
     {
       "source": "/integrations/wireless-devices",
-      "destination": "/relay/integrations/wireless-devices"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/wireless-devices.md"
     },
     {
       "source": "/integrations/youtube-live",
-      "destination": "/relay/integrations/youtube-live"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/integrations/youtube-live.md"
     },
     {
       "source": "/introduction",
-      "destination": "/relay/introduction"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/introduction.md"
     },
     {
       "source": "/protocols/lan-sharing",
-      "destination": "/relay/protocols/lan-sharing"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/protocols/lan-sharing.md"
     },
     {
       "source": "/protocols/midi",
-      "destination": "/relay/protocols/midi"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/protocols/midi.md"
     },
     {
       "source": "/protocols/osc",
-      "destination": "/relay/protocols/osc"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/protocols/osc.md"
     },
     {
       "source": "/protocols/overview",
-      "destination": "/relay/protocols/overview"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/protocols/overview.md"
     },
     {
       "source": "/quickstart",
-      "destination": "/relay/quickstart"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/quickstart.md"
     },
     {
       "source": "/troubleshooting",
-      "destination": "/relay/troubleshooting"
+      "destination": "https://github.com/dbullard/Relay/blob/main/docs/guide/troubleshooting.md"
     }
   ]
 }
