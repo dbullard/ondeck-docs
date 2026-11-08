@@ -42,87 +42,11 @@
             "description": "Build live production dashboards, automations, and integrations.",
             "groups": [
               {
-                "group": "Get Started",
+                "group": "Relay has moved to GitHub",
                 "expanded": true,
-                "root": "relay/introduction",
                 "pages": [
-                  "relay/quickstart",
-                  "relay/guides/setup-wizard",
-                  "relay/core-concepts"
-                ]
-              },
-              {
-                "group": "Build Dashboards",
-                "expanded": true,
-                "root": "relay/dashboards/overview",
-                "pages": [
-                  "relay/dashboards/tiles",
-                  "relay/dashboards/modules",
-                  "relay/dashboards/variables",
-                  "relay/dashboards/live-mode"
-                ]
-              },
-              {
-                "group": "Module guides",
-                "expanded": false,
-                "pages": [
-                  "relay/dashboards/modules/people-planning",
-                  "relay/dashboards/modules/audio-visual",
-                  "relay/dashboards/modules/video-presentation",
-                  "relay/dashboards/modules/wireless",
-                  "relay/dashboards/modules/utility"
-                ]
-              },
-              {
-                "group": "Automation",
-                "expanded": true,
-                "root": "relay/dashboards/automation",
-                "pages": [
-                  "relay/dashboards/nodes/triggers",
-                  "relay/dashboards/nodes/actions",
-                  "relay/dashboards/nodes/utilities",
-                  "relay/dashboards/nodes/sources"
-                ]
-              },
-              {
-                "group": "Integrations",
-                "expanded": true,
-                "root": "relay/integrations/overview",
-                "pages": [
-                  "relay/integrations/planning-center",
-                  "relay/integrations/propresenter",
-                  "relay/integrations/youtube-live",
-                  "relay/integrations/ndi",
-                  "relay/integrations/audio-consoles",
-                  "relay/integrations/wireless-devices",
-                  "relay/integrations/lighting",
-                  "relay/integrations/vista"
-                ]
-              },
-              {
-                "group": "Protocols",
-                "expanded": true,
-                "root": "relay/protocols/overview",
-                "pages": [
-                  "relay/protocols/osc",
-                  "relay/protocols/midi",
-                  "relay/protocols/lan-sharing"
-                ]
-              },
-              {
-                "group": "Account & Support",
-                "expanded": true,
-                "root": "relay/account/license",
-                "pages": [
-                  "relay/account/permissions",
-                  "relay/account/updates",
-                  "relay/troubleshooting",
-                  "relay/account/support",
-                  "relay/account/beta-features",
                   "relay/privacy-policy",
-                  "relay/terms-conditions",
-                  "relay/changelog",
-                  "relay/beta-changelog"
+                  "relay/terms-conditions"
                 ]
               }
             ]
